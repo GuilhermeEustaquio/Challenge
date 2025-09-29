@@ -7,6 +7,13 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Icons menu nav */
+
+#icons {
+    max-width: 20px;
+    filter: invert(48%) sepia(27%) saturate(5273%) hue-rotate(5deg) brightness(100%) contrast(100%);
+}
+
 html {
     display: flex;
     justify-content: center;
@@ -42,6 +49,9 @@ header nav li {
 }
 
 header nav li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     color: #ff9100;
     text-decoration: none;
     font-weight: bold;
@@ -54,6 +64,10 @@ header nav li:hover {
 
 header nav li:hover a {
     color: #a8e5a0;
+}
+
+header nav li:hover #icons {
+     filter: invert(67%) sepia(54%) saturate(365%) hue-rotate(75deg) brightness(100%) contrast(100%);
 }
 
 /* Conteúdo */
@@ -164,7 +178,7 @@ footer {
     width: 220px;
     height: 220px;
     border-radius: 50%;
-    object-fit:initial;
+    object-fit:cover;
     margin-bottom: 15px;
     border: 3px solid #a8e5a0;
 }
