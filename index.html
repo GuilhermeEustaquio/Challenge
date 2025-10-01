@@ -5,40 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Principal</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!--cabeçalho-->
+    <!-- Cabeçalho -->
     <header>
         <div class="logo">
             <img src="src/logo-turma-do-bem.png" alt="Logo da Instituição">
         </div>
         <nav>
             <ul>
-                <li><a href="index.html"><img id="icons" src="/src/icon/home.png" alt=""> Home</a></li>
-                <li><a href="sobre.html"><img id="icons" src="/src/icon/sobre.png" alt=""> Sobre</a></li>
-                <li><a href="faq.html"><img id="icons" src="/src/icon/faq.png" alt=""> FAQ</a></li>
-                <li><a href="contato.html"><img id="icons" src="/src/icon/contato.png" alt=""> Contato</a></li>
+                <li>
+                    <a href="index.html">
+                        <img id="icons" src="/src/icon/home.png" alt=""> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="quemsomos.html">
+                        <img id="icons" src="/src/icon/equipe.png" alt=""> Quem Somos?
+                    </a>
+                </li>
+                <li>
+                    <a href="sobre.html">
+                        <img id="icons" src="/src/icon/sobre.png" alt=""> Sobre
+                    </a>
+                </li>
+                <li>
+                    <a href="faq.html">
+                        <img id="icons" src="/src/icon/faq.png" alt=""> FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="contato.html">
+                        <img id="icons" src="/src/icon/contato.png" alt=""> Contato
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <!-- conteúdo principal -->
+    <!-- Conteúdo principal -->
     <main>
-        <h1>INCLUSÃO SOCIAL ATRAVÉS DO SORRISO</h1>
+        <h1 id="central">Central do Bem</h1>
 
         <div class="banner">
-            <img src="src/dentista-do-bem-1.png" alt="Banner principal">
+            <div class="banner-inside">
+                <img src="src/dentista-do-bem-1.png" alt="Banner principal">
+                <p>
+                    O Dentista do Bem é o principal programa da TdB, destinado a crianças e adolescentes em situação de vulnerabilidade social na faixa dos 11 a 17 anos. 
+                    Os nossos beneficiários possuem graves problemas bucais e não têm condições financeiras de pagar pelo tratamento. 
+                    Após serem selecionados e entrarem no programa, os jovens recebem atendimento odontológico e gratuito – independente da complexidade dos casos – até completarem 18 anos.
+                </p>
+            </div>
+
+            <div class="banner-inside">
+                <img src="src/apolonias-do-bem-1.png" alt="Banner principal">
+                <p>
+                    Apolônias do Bem oferece tratamento odontológico e gratuito para mulheres cis e trans que vivenciaram situações de violência e tiveram a dentição afetada pelas agressões. 
+                    As beneficiárias são selecionadas através de triagens em que passam por um rápido exame oral, não invasivo, 
+                    e respondem a uma ferramenta científica que mede o impacto da saúde bucal na qualidade de vida de uma pessoa.
+                </p>
+            </div>
         </div>
 
         <div class="cards">
-            <a href="#" class="card">Programa Dentista do Bem</a>
+            <a href="sobre.html" class="card">Saiba Mais</a>
         </div>
     </main>
 
-    <!-- rodapé -->
+    <!-- Rodapé -->
     <footer>
-        <p>Este ambiente é de uso interno. Não compartilhar senhas ou dados de pacientes fora deste portal.</p>
+        <p>
+            Este ambiente é de uso interno. Não compartilhar senhas ou dados de pacientes fora deste portal.
+        </p>
     </footer>
+
 </body>
 </html>

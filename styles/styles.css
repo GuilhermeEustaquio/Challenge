@@ -4,14 +4,7 @@ body {
     width: 1300px;
     min-width: 1300px;
     background: #ffffff;
-    font-family: Arial, sans-serif;
-}
-
-/* Icons menu nav */
-
-#icons {
-    max-width: 20px;
-    filter: invert(48%) sepia(27%) saturate(5273%) hue-rotate(5deg) brightness(100%) contrast(100%);
+    font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -19,24 +12,40 @@ html {
     justify-content: center;
 }
 
+/* Ícones */
+#icons {
+    max-width: 20px;
+    filter: invert(48%) sepia(27%) saturate(5273%) hue-rotate(5deg) brightness(100%) contrast(100%);
+}
+
+#icons2 {
+    max-width: 20px;
+}
+
 /* Cabeçalho */
 header {
-    background: #a8e5a0;
-    color: #ff9100;
-    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1300px;
+    background: linear-gradient(90deg, #2D6A4F, #1B4332);
+    color: #FFB703;
+    padding: 7px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
 }
 
 header .logo {
-    font-weight: bold;
-    font-size: 20px;
+    margin-left: 20px;
 }
 
 header nav ul {
     list-style: none;
-    margin: 0;
+    margin-right: 20px;
     padding: 0;
     display: flex;
     gap: 20px;
@@ -52,28 +61,30 @@ header nav li a {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #ff9100;
+    color: #FFB703;
     text-decoration: none;
     font-weight: bold;
     transition: ease color 0.3s;
 }
 
 header nav li:hover {
-    background-color: #ff9100;
+    background-color: #302e298f;
 }
 
 header nav li:hover a {
-    color: #a8e5a0;
+    color: #2D6A4F;
 }
 
 header nav li:hover #icons {
-     filter: invert(67%) sepia(54%) saturate(365%) hue-rotate(75deg) brightness(100%) contrast(100%);
+    filter: invert(67%) sepia(54%) saturate(365%) hue-rotate(75deg) brightness(100%) contrast(100%);
 }
 
 /* Conteúdo */
 main {
     text-align: center;
     padding: 40px 20px;
+    background-color: #F1F1F1;
+    padding-top: 130px;
 }
 
 main h1 {
@@ -81,14 +92,45 @@ main h1 {
     margin-bottom: 20px;
 }
 
-.banner img {
-    width: 400px;
-    
-    display: block;
-    margin: 0 auto 30px;
+#central {
+    font-size: 40px;
+    font-weight: 50px;
+    color: #2D6A4F;
 }
 
-/* Cards */
+.banner {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    margin: 50px;
+}
+
+.banner-inside {
+    width: 400px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #34373a1f;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.banner-inside p {
+    text-align: justify;
+    margin: 10px;
+}
+
+.banner-inside:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.banner img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+/* Botão principal */
 .cards {
     display: flex;
     justify-content: center;
@@ -97,29 +139,92 @@ main h1 {
 }
 
 .card {
-    background: #e6e6e6;
+    background: #FFB703;
     padding: 20px 40px;
-    border-radius: 8px;
+    border-radius: 12px;
     text-decoration: none;
-    color: #42424e;
+    color: #2D6A4F;
     font-weight: bold;
-    transition: background 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
 }
 
 .card:hover {
-    background: #d4d4d4;
+    background: #ffa41b;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
 /* Rodapé */
 footer {
-    background-color: #333;
+    background-color: #333333;
     color: #fff;
     text-align: center;
-    padding: 15px;
-    margin-top: 40px;
+    padding: 40px 15px 15px 15px;
 }
 
-/*Pagina Sobre*/
+/* Página Sobre */
+#justifyp {
+    text-align: justify;
+}
+
+.titulo {
+    font-size: 39px;
+    color: #bfd850;
+    padding: 50px;
+}
+
+.titulo2 {
+    font-size: 39px;
+    color: #f18228;
+    padding: 50px;
+}
+
+.banner-inside-menor {
+    text-align: center;
+}
+
+#informacoes-eqp h2 {
+    color: #f18228;
+}
+
+#verde h2 {
+    color: #bfd850;
+}
+
+#informacoes-sobre {
+    margin-top: 200px;
+    gap: 200px;
+}
+
+.banner-inside-menor h2 {
+    font-size: 39px;
+    margin-bottom: 0;
+}
+
+.banner-inside-menor p {
+    margin-top: 1px;
+    font-size: 19px;
+}
+
+.banner-inside-menor img {
+    width: 150px;
+    transition: width 0.3s ease;
+}
+
+.banner-inside-menor img:hover {
+    width: 160px;
+}
+
+#banner2 {
+    margin-top: 150px;
+}
+
+/* Página Equipe */
+.titulo-equipe {
+    font-family: "Playwrite DE Grund";
+    font-size: 70px;
+}
 
 /* Container da equipe */
 .container_equipe {
@@ -128,13 +233,14 @@ footer {
     gap: 100px;
     flex-wrap: wrap;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /* Card com efeito flip */
 .card-equipe {
     width: 300px;
     height: 360px;
-    perspective: 8100px; 
+    perspective: 8100px;
     position: relative;
     flex-shrink: 0;
 }
@@ -156,7 +262,8 @@ footer {
 }
 
 /* Frente do card */
-.card-front, .card-back {
+.card-front,
+.card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -166,7 +273,7 @@ footer {
 }
 
 .card-front {
-    background: #f0b762;
+    background: #FFB703;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -178,19 +285,20 @@ footer {
     width: 220px;
     height: 220px;
     border-radius: 50%;
-    object-fit:cover;
+    object-fit: cover;
     margin-bottom: 15px;
-    border: 3px solid #a8e5a0;
 }
 
 .card-front h3 {
     margin: 0;
     color: #42424e;
+    font-size: 23px;
+    font-family: "Playwrite DE Grund";
 }
 
 /* Verso do card */
 .card-back {
-    background: #252724;
+    background: #2D6A4F;
     color: #fff;
     transform: rotateY(180deg);
     display: flex;
@@ -219,9 +327,12 @@ footer {
     text-decoration: none;
     color: #fff;
     transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-/* Botao Linkedin */
+/* Botão Linkedin */
 .btn-linkedin {
     background-color: #0A66C2;
 }
@@ -230,11 +341,11 @@ footer {
     background-color: #004182;
 }
 
-/*BotaoGitHub */
+/* Botão GitHub */
 .btn-github {
-    background-color: #333;
+    background-color: #6b0379;
 }
 
 .btn-github:hover {
-    background-color: #555;
+    background-color: #430a5a;
 }
