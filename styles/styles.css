@@ -43,6 +43,8 @@ header .logo {
     margin-left: 20px;
 }
 
+
+
 header nav ul {
     list-style: none;
     margin-right: 20px;
@@ -162,6 +164,58 @@ footer {
     text-align: center;
     padding: 40px 15px 15px 15px;
 }
+
+/* Pagian FAQ */
+
+#perfil{
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    transition: all 0..3s ease;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: row;
+}
+
+.box p{
+    text-align: justify;
+    max-width: 500px ;
+    margin: 30px;
+    align-items: center;
+    display: flex;
+}
+
+.box img {
+    margin: 40px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.box-left {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.box-left p{
+    text-align: justify;
+    max-width: 500px ;
+    margin: 30px;
+    align-items: center;
+    display: flex;
+}
+
+.box-left img {
+    margin: 40px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 140px ;
+}
+
+
 
 /* Página Sobre */
 #justifyp {
