@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
+    <title>Contato</title>
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- Cabeçalho -->
     <header>
         <div class="logo">
             <img src="src/logo-turma-do-bem.png" alt="Logo da Instituição">
         </div>
+
         <nav>
             <ul>
                 <li><a href="index.html"><img id="icons" src="/src/icon/home.png" alt=""> Home</a></li>
@@ -26,38 +31,74 @@
                 <li><a href="contato.html"><img id="icons" src="/src/icon/contato.png" alt=""> Contato</a></li>
             </ul>
         </nav>
+
         <div class="logo">
-            <img src="src/logocdb.png" style="width: 160px; margin-right: 20px;" alt="Logo da Instituição">
+            <img src="src/logocdb.png" style="width: 160px; margin-right: 20px;" alt="Logo Central do Bem">
         </div>
     </header>
 
     <!-- Conteúdo principal -->
     <main class="formImg">
         <div class="banner">
-
             <form class="forms">
-                <label for="txtNome">Nome: </label><br>
-          <input type="text" name="txtNome" id="txtNome" required >
-          <br >
-          <label for="txtEmail">E-Mail:</label><br>
-          <input type="email" name="txtEmail" id="txtEmail" >
-            
-          <br >
-          <label for="telefone">Telefone: </label><br>
-          <input type="tel" name="telefone" id="telefone" >
-          <br >
-          <label for="txtNome">Mensagem: </label><br>
-          <input type="text" name="txtMsg" id="txtMsg" required ><br>
-            
-                <button id="submitBtn"> Submit</button>
+                <h1>Formulário de Contato</h1>
+                <label for="txtNome">Nome:</label><br>
+                <input type="text" name="txtNome" id="txtNome" required><br>
 
+                <label for="txtEmail">E-Mail:</label><br>
+                <input type="email" name="txtEmail" id="txtEmail"><br>
+
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" name="telefone" id="telefone"><br>
+
+                <label for="txtMsg">Mensagem:</label><br>
+                <input type="text" name="txtMsg" id="txtMsg" required><br>
+
+                <button id="submitBtn">Submit</button>
             </form>
         </div>
     </main>
 
     <!-- Rodapé -->
-    <footer>
-        <p>Este ambiente é de uso interno. Não compartilhar senhas ou dados de pacientes fora deste portal.</p>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-about">
+                <img src="src/logocdb.png" alt="Turma do Bem" class="footer-logo">
+                <p>Central do Bem – Plataforma interna desenvolvida para modernizar e integrar a comunicação da Turma do Bem.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quemsomos.html">Quem Somos</a></li>
+                    <li><a href="sobre.html">Sobre o Projeto</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p>
+                    Email Integrantes do Grupo:<br>
+                    <a href="mailto:guilhermepeustaquio@gmail.com">guilhermepeustaquio@gmail.com</a><br>
+                    <a href="mailto:caiocc2006@gmail.com">caiocc2006@gmail.com</a><br>
+                    <a href="mailto:matheustavares1356@gmail.com">matheustavares1356@gmail.com</a>
+                </p>
+                <p>
+                    Conheça a TdB:<br>
+                    <a href="https://turmadobem.org.br/" target="_blank">www.turmadobem.org</a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Central do Bem. Projeto acadêmico - FIAP | Challenge Turma do Bem</p>
+        </div>
     </footer>
+
 </body>
 </html>
