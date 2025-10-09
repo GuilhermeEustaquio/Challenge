@@ -32,10 +32,27 @@
     </header>
 
     <!-- Conteúdo principal -->
-    <main>
-        <form>
+    <main class="formImg">
+        <div class="banner">
 
-        </form>
+            <form class="forms">
+                <label for="txtNome">Nome: </label><br>
+          <input type="text" name="txtNome" id="txtNome" required >
+          <br >
+          <label for="txtEmail">E-Mail:</label><br>
+          <input type="email" name="txtEmail" id="txtEmail" >
+            
+          <br >
+          <label for="telefone">Telefone: </label><br>
+          <input type="tel" name="telefone" id="telefone" >
+          <br >
+          <label for="txtNome">Mensagem: </label><br>
+          <input type="text" name="txtMsg" id="txtMsg" required ><br>
+            
+                <button id="submitBtn"> Submit</button>
+
+            </form>
+        </div>
     </main>
 
     <!-- Rodapé -->
