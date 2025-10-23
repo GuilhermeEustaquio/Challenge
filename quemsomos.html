@@ -8,6 +8,9 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="styles/styles.css">
 
+    <!-- Scripts -->
+    <script src="scripts/main.js" defer></script>
+
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +25,12 @@
             <img src="src/logo-turma-do-bem.png" alt="Logo da Instituição">
         </div>
 
-        <nav>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="sr-only">Abrir menu</span>
+            ☰
+        </button>
+
+        <nav id="primary-navigation">
             <ul>
                 <li><a href="index.html"><img id="icons" src="/src/icon/home.png" alt=""> Home</a></li>
                 <li><a href="quemsomos.html"><img id="icons" src="/src/icon/equipe.png" alt=""> Quem Somos</a></li>
