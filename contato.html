@@ -14,49 +14,123 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="contact-page-body">
 
     <!-- Cabeçalho -->
-    <header>
-        <div class="logo">
-            <img src="src/logo-turma-do-bem.png" alt="Logo da Instituição">
-        </div>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="index.html" class="brand" aria-label="Voltar para a página inicial">
+                <img src="src/logo-turma-do-bem.png" alt="Logo da Turma do Bem">
+            </a>
 
-        <nav>
-            <ul>
-                <li><a href="index.html"><img id="icons" src="/src/icon/home.png" alt=""> Home</a></li>
-                <li><a href="quemsomos.html"><img id="icons" src="/src/icon/equipe.png" alt=""> Quem Somos</a></li>
-                <li><a href="sobre.html"><img id="icons" src="/src/icon/sobre.png" alt=""> Sobre</a></li>
-                <li><a href="faq.html"><img id="icons" src="/src/icon/faq.png" alt=""> FAQ</a></li>
-                <li><a href="contato.html"><img id="icons" src="/src/icon/contato.png" alt=""> Contato</a></li>
-            </ul>
-        </nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menu de navegação">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
 
-        <div class="logo">
-            <img src="src/logocdb.png" style="width: 160px; margin-right: 20px;" alt="Logo Central do Bem">
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="index.html"><img class="nav-icon" src="src/icon/home.png" alt=""> Home</a></li>
+                    <li><a href="quemsomos.html"><img class="nav-icon" src="src/icon/equipe.png" alt=""> Quem Somos</a></li>
+                    <li><a href="sobre.html"><img class="nav-icon" src="src/icon/sobre.png" alt=""> Sobre</a></li>
+                    <li><a href="faq.html"><img class="nav-icon" src="src/icon/faq.png" alt=""> FAQ</a></li>
+                    <li><a href="contato.html"><img class="nav-icon" src="src/icon/contato.png" alt=""> Contato</a></li>
+                </ul>
+            </nav>
+
+            <a href="index.html" class="brand brand-secondary" aria-label="Conheça a Central do Bem">
+                <img src="src/logocdb.png" alt="Logo Central do Bem">
+            </a>
         </div>
     </header>
 
     <!-- Conteúdo principal -->
-    <main class="formImg">
-        <div class="banner">
-            <form class="forms">
-                <h1>Formulário de Contato</h1>
-                <label for="txtNome">Nome:</label><br>
-                <input type="text" name="txtNome" id="txtNome" required><br>
+    <main class="contact-page">
+        <section class="contact-hero full-bleed" aria-labelledby="contact-title">
+            <div class="layout-wrapper contact-hero-content">
+                <span class="section-tag">Contato</span>
+                <h1 id="contact-title">Converse com a Central do Bem</h1>
+                <p>Estamos disponíveis para apoiar voluntários, parceiros e beneficiários da Turma do Bem. Envie uma mensagem pelo formulário ou escolha o canal que melhor funciona para você.</p>
 
-                <label for="txtEmail">E-Mail:</label><br>
-                <input type="email" name="txtEmail" id="txtEmail"><br>
+                <div class="contact-hero-actions">
+                    
+                    <button class="ghost-button" type="button" data-scroll-target="#contact-form">Falar com a equipe</button>
+                </div>
+            </div>
+        </section>
 
-                <label for="telefone">Telefone:</label><br>
-                <input type="tel" name="telefone" id="telefone"><br>
+        <section class="contact-grid" id="contact-form">
+            <div class="contact-card">
+                <h2>Envie uma mensagem</h2>
+                <p>Compartilhe suas dúvidas, sugestões ou necessidades. Nossa equipe responde em até 2 dias úteis.</p>
+                <form class="contact-form">
+                    <div>
+                        <label for="txtNome">Nome completo</label>
+                        <input type="text" name="txtNome" id="txtNome" placeholder="Como devemos te chamar?" required>
+                    </div>
 
-                <label for="txtMsg">Mensagem:</label><br>
-                <input type="text" name="txtMsg" id="txtMsg" required><br>
+                    <div>
+                        <label for="txtEmail">E-mail</label>
+                        <input type="email" name="txtEmail" id="txtEmail" placeholder="nome@email.com" required>
+                    </div>
 
-                <button id="submitBtn">Submit</button>
-            </form>
-        </div>
+                    <div>
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000">
+                    </div>
+
+                    <div>
+                        <label for="txtMsg">Mensagem</label>
+                        <textarea name="txtMsg" id="txtMsg" placeholder="Conte como podemos ajudar" required></textarea>
+                    </div>
+
+                    <button type="submit" class="primary-button">Enviar mensagem</button>
+                </form>
+            </div>
+
+            <aside class="contact-info">
+                <h2>Outros canais</h2>
+                <p>Se preferir, você também pode falar com o time por e-mail ou explorar outros materiais da Turma do Bem.</p>
+
+                <div class="contact-list">
+                    <div class="contact-item">
+                        <div class="contact-badge">📧</div>
+                        <div>
+                            <strong>E-mail da equipe</strong>
+                            <p>
+                                <a href="mailto:guilhermepeustaquio@gmail.com">guilhermepeustaquio@gmail.com</a><br>
+                                <a href="mailto:caiocc2006@gmail.com">caiocc2006@gmail.com</a><br>
+                                <a href="mailto:matheustavares1356@gmail.com">matheustavares1356@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-badge">🌐</div>
+                        <div>
+                            <strong>Conheça a Turma do Bem</strong>
+                            <p><a href="https://turmadobem.org.br/" target="_blank">www.turmadobem.org.br</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-badge">⏰</div>
+                        <div>
+                            <strong>Horário de atendimento</strong>
+                            <p>Segunda a sexta-feira, das 9h às 18h.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-badge">🤝</div>
+                        <div>
+                            <strong>Parcerias e voluntariado</strong>
+                            <p>Envie seu interesse pelo formulário e retornaremos com as próximas etapas.</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </section>
     </main>
 
     <!-- Rodapé -->
@@ -100,5 +174,6 @@
         </div>
     </footer>
 
+    <script src="scripts/main.js" defer></script>
 </body>
 </html>
