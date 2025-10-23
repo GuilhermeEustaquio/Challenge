@@ -1080,6 +1080,122 @@ main p {
    FAQ
 ========================= */
 
+.faq-section {
+    display: grid;
+    gap: clamp(1.5rem, 4vw, 2.5rem);
+    padding-bottom: 10vh;
+}
+
+.faq-card {
+    background: var(--surface);
+    border-radius: 28px;
+    box-shadow: var(--shadow-soft);
+    padding: clamp(1.75rem, 3vw, 2.5rem);
+    display: grid;
+    gap: 1.5rem;
+}
+
+.faq-question {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.faq-toggle {
+    background: none;
+    border: none;
+    color: var(--brand-green-900);
+    font-family: inherit;
+    font-size: clamp(1.3rem, 3vw, 1.75rem);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex: 1;
+    text-align: left;
+    cursor: pointer;
+    padding: 0;
+}
+
+.faq-toggle:focus-visible {
+    outline: 3px solid var(--brand-orange-400);
+    outline-offset: 4px;
+}
+
+.faq-toggle-text {
+    flex: 1;
+}
+
+.faq-toggle-icon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: rgba(6, 94, 102, 0.12);
+    position: relative;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+}
+
+.faq-toggle-icon::before,
+.faq-toggle-icon::after {
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 0.125rem;
+    border-radius: 999px;
+    background: var(--brand-green-900);
+    transition: transform 0.3s ease;
+}
+
+.faq-toggle-icon::after {
+    transform: rotate(90deg);
+}
+
+.faq-card.is-open .faq-toggle-icon::after {
+    transform: rotate(0deg);
+}
+
+.faq-avatar {
+    width: 68px;
+    height: 68px;
+    border-radius: 18px;
+    object-fit: cover;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+}
+
+.faq-answer {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.faq-answer[hidden] {
+    display: none;
+}
+
+.faq-answer .faq-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+.faq-answer > div {
+    flex: 1;
+}
+
+.faq-list {
+    margin: 0.75rem 0 0 0;
+    padding-left: 1.2rem;
+    color: var(--text-muted);
+}
+
+.faq-list li {
+    margin-bottom: 0.35rem;
+    line-height: 1.5;
+}
+
 /* =========================
    EQUIPE
 ========================= */

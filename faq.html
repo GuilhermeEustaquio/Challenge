@@ -17,113 +17,103 @@
 <body>
 
     <!-- Cabeçalho -->
-    <header>
-        <div class="logo">
-            <img src="src/logo-turma-do-bem.png" alt="Logo da Instituição">
-        </div>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="index.html" class="brand" aria-label="Voltar para a página inicial">
+                <img src="src/logo-turma-do-bem.png" alt="Logo da Turma do Bem">
+            </a>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">
-                        <img id="icons" src="/src/icon/home.png" alt=""> Home
-                    </a>
-                </li>
-                <li>
-                    <a href="quemsomos.html">
-                        <img id="icons" src="/src/icon/equipe.png" alt=""> Quem Somos?
-                    </a>
-                </li>
-                <li>
-                    <a href="sobre.html">
-                        <img id="icons" src="/src/icon/sobre.png" alt=""> Sobre
-                    </a>
-                </li>
-                <li>
-                    <a href="faq.html">
-                        <img id="icons" src="/src/icon/faq.png" alt=""> FAQ
-                    </a>
-                </li>
-                <li>
-                    <a href="contato.html">
-                        <img id="icons" src="/src/icon/contato.png" alt=""> Contato
-                    </a>
-                </li>
-            </ul>
-        </nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menu de navegação">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
 
-        <div class="logo">
-            <img src="src/logocdb.png" style="width: 160px; margin-right: 20px;" alt="Logo da Instituição">
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="index.html"><img class="nav-icon" src="src/icon/home.png" alt=""> Home</a></li>
+                    <li><a href="quemsomos.html"><img class="nav-icon" src="src/icon/equipe.png" alt=""> Quem Somos</a></li>
+                    <li><a href="sobre.html"><img class="nav-icon" src="src/icon/sobre.png" alt=""> Sobre</a></li>
+                    <li><a href="faq.html"><img class="nav-icon" src="src/icon/faq.png" alt=""> FAQ</a></li>
+                    <li><a href="contato.html"><img class="nav-icon" src="src/icon/contato.png" alt=""> Contato</a></li>
+                </ul>
+            </nav>
+
+            <a href="index.html" class="brand brand-secondary" aria-label="Conheça a Central do Bem">
+                <img src="src/logocdb.png" alt="Logo Central do Bem">
+            </a>
         </div>
     </header>
 
     <!-- Conteúdo principal -->
     <main>
-        <h1 id="central">FAQ Central do Bem</h1>
-        <!-- Inicio do FAQ -->
-        <div class="box">
-            <!-- Pergunta -->
-            <img src="/src/semfoto.png" alt="">
-            <p>Qual problema o CRM Inteligente resolve dentro da Turma do Bem?</p>
-        </div>
+        <section class="page-hero">
+            <h1 class="highlight-title">FAQ Central do Bem</h1>
+            <p class="page-intro">Conheça os detalhes do CRM Inteligente desenvolvido para a Turma do Bem. Reunimos as perguntas mais frequentes e explicamos como a solução transforma a rotina de atendimento e gestão.</p>
+        </section>
 
-        <hr>
+        <section class="faq-section">
+            <article class="faq-card">
+                <div class="faq-question">
+                    <img class="faq-avatar" src="src/semfoto.png" alt="Ícone de pergunta">
+                    <button class="faq-toggle" type="button" aria-expanded="false">
+                        <span class="faq-toggle-text">Qual problema o CRM Inteligente resolve dentro da Turma do Bem?</span>
+                        <span class="faq-toggle-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="faq-answer" hidden>
+                    <img class="faq-avatar" src="src/euperfil.jpg" alt="Foto de Matheus Tavares">
+                    <div>
+                        <p>
+                            O sistema foi desenvolvido para solucionar três desafios críticos enfrentados hoje: comunicação fragmentada, perda de informações importantes e falta de métricas confiáveis para tomada de decisão. Ele centraliza toda a operação em uma única plataforma, conectando dados, pessoas e processos de forma organizada e acessível.
+                        </p>
+                    </div>
+                </div>
+            </article>
 
-        <div class="box-left">
-            <!-- Resposta -->
-            <img src="/src/euperfil.jpg" alt="">
-            <p>
-                O sistema foi desenvolvido para solucionar três desafios críticos enfrentados hoje:
-                comunicação fragmentada, perda de informações importantes e falta de métricas
-                confiáveis para tomada de decisão. Ele centraliza toda a operação em uma única
-                plataforma, conectando dados, pessoas e processos de forma organizada e acessível.
-            </p>
-        </div>
+            <article class="faq-card">
+                <div class="faq-question">
+                    <img class="faq-avatar" src="src/semfoto.png" alt="Ícone de pergunta">
+                    <button class="faq-toggle" type="button" aria-expanded="false">
+                        <span class="faq-toggle-text">Como o CRM organiza a comunicação entre equipe, dentistas e pacientes?</span>
+                        <span class="faq-toggle-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="faq-answer" hidden>
+                    <img class="faq-avatar" src="src/eustaquio.PNG" alt="Foto de Guilherme Eustáquio">
+                    <div>
+                        <p>
+                            Toda a comunicação será centralizada em um Hub Integrado de Mensagens, onde e-mails, mensagens de WhatsApp e registros de ligações são automaticamente vinculados ao caso, paciente ou projeto correspondente. O sistema classifica as demandas por tipo e urgência, eliminando perda de contexto e reduzindo retrabalho entre áreas.
+                        </p>
+                    </div>
+                </div>
+            </article>
 
-        <hr>
-
-        <div class="box">
-            <!-- Pergunta -->
-            <img src="/src/semfoto.png" alt="">
-            <p>Como o CRM vai organizar a comunicação entre equipe, dentistas e pacientes?</p>
-        </div>
-
-        <hr>
-
-        <div class="box-left">
-            <!-- Resposta -->
-            <img src="/src/eustaquio.PNG" alt="">
-            <p>
-                Toda a comunicação será centralizada em um Hub Integrado de Mensagens, onde e-mails,
-                mensagens de WhatsApp e registros de ligações serão automaticamente vinculados ao
-                caso, paciente ou projeto correspondente. Além disso, o sistema vai classificar as
-                demandas por tipo e urgência, eliminando perda de contexto e reduzindo retrabalho
-                entre áreas.
-            </p>
-        </div>
-
-        <hr>
-
-        <div class="box">
-            <!-- Pergunta -->
-            <img src="/src/semfoto.png" alt="">
-            <p>O CRM é só um banco de dados ou também oferece inteligência para apoiar decisões?</p>
-        </div>
-
-        <hr>
-
-        <div class="box-left">
-            <!-- Resposta -->
-            <img src="/src/caioperfil.jpeg" alt="">
-            <p>
-                Vai muito além de um banco de dados. O CRM contará com:<br><br>
-                • Chatbot com base de conhecimento inteligente para consultas e protocolos internos;<br><br>
-                • Histórico automático de casos e operações;<br><br>
-                • Dashboard analítico em tempo real, gerando relatórios com indicadores como tempo
-                de resposta, volume de atendimentos, produtividade e projeções.<br><br>
-                Tudo isso permitirá decisões mais rápidas e precisas, com base em dados reais.
-            </p>
-        </div>
+            <article class="faq-card">
+                <div class="faq-question">
+                    <img class="faq-avatar" src="src/semfoto.png" alt="Ícone de pergunta">
+                    <button class="faq-toggle" type="button" aria-expanded="false">
+                        <span class="faq-toggle-text">O CRM oferece inteligência para apoiar decisões estratégicas?</span>
+                        <span class="faq-toggle-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="faq-answer" hidden>
+                    <img class="faq-avatar" src="src/caioperfil.jpeg" alt="Foto de Caio Couto">
+                    <div>
+                        <p>
+                            Vai muito além de um banco de dados. O CRM reúne inteligência em diferentes módulos que apoiam a tomada de decisão da equipe gestora.
+                        </p>
+                        <ul class="faq-list">
+                            <li>Chatbot com base de conhecimento para consultas a protocolos internos.</li>
+                            <li>Histórico automático de casos, operações e interações com beneficiários.</li>
+                            <li>Dashboards analíticos em tempo real com indicadores de atendimento e produtividade.</li>
+                        </ul>
+                        <p>
+                            Com dados consolidados em um único painel, o time consegue priorizar demandas, acompanhar metas e antecipar oportunidades de impacto.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
     </main>
 
     <!-- Rodapé -->
@@ -164,5 +154,6 @@
 
         </footer>
 
+    <script src="scripts/main.js" defer></script>
 </body>
 </html>
