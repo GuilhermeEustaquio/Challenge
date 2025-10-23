@@ -14,123 +14,221 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="about-page">
 
     <!-- Cabeçalho -->
-    <header>
-        <div class="logo">
-            <img src="src/logo-turma-do-bem.png" alt="Logo da Instituição">
-        </div>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="index.html" class="brand" aria-label="Voltar para a página inicial">
+                <img src="src/logo-turma-do-bem.png" alt="Logo da Turma do Bem">
+            </a>
 
-        <nav>
-            <ul>
-                <li><a href="index.html"><img id="icons" src="/src/icon/home.png" alt=""> Home</a></li>
-                <li><a href="quemsomos.html"><img id="icons" src="/src/icon/equipe.png" alt=""> Quem Somos?</a></li>
-                <li><a href="sobre.html"><img id="icons" src="/src/icon/sobre.png" alt=""> Sobre</a></li>
-                <li><a href="faq.html"><img id="icons" src="/src/icon/faq.png" alt=""> FAQ</a></li>
-                <li><a href="contato.html"><img id="icons" src="/src/icon/contato.png" alt=""> Contato</a></li>
-            </ul>
-        </nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menu de navegação">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
 
-        <div class="logo">
-            <img src="src/logocdb.png" alt="Logo da Instituição" style="width: 160px; margin-right: 20px;">
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="index.html"><img class="nav-icon" src="src/icon/home.png" alt=""> Home</a></li>
+                    <li><a href="quemsomos.html"><img class="nav-icon" src="src/icon/equipe.png" alt=""> Quem Somos</a></li>
+                    <li><a href="sobre.html"><img class="nav-icon" src="src/icon/sobre.png" alt=""> Sobre</a></li>
+                    <li><a href="faq.html"><img class="nav-icon" src="src/icon/faq.png" alt=""> FAQ</a></li>
+                    <li><a href="contato.html"><img class="nav-icon" src="src/icon/contato.png" alt=""> Contato</a></li>
+                </ul>
+            </nav>
+
+            <a href="index.html" class="brand brand-secondary" aria-label="Conheça a Central do Bem">
+                <img src="src/logocdb.png" alt="Logo Central do Bem">
+            </a>
         </div>
     </header>
 
     <!-- Conteúdo principal -->
-    <main>
-        <h1 class="titulo2"><strong>SOBRE A CENTRAL DO BEM</strong></h1>
-
-        <div class="banner">
-            <div class="banner-inside" id="banner-principal">
-                <img id="img-main" src="src/logocdb.png" alt="Banner principal">
-                <p>
-                    A Turma do Bem enfrenta atualmente uma comunicação fragmentada entre canais, perda de informações críticas e ausência de métricas confiáveis, resultando em retrabalho e sobrecarga da equipe.<br>
-                    Diante desse cenário, desenvolvemos um projeto que consiste na criação de um CRM inteligente exclusivo para uso interno da Turma do Bem, com o objetivo de concentrar toda a operação da organização em uma única plataforma. O objetivo é resolver três grandes dores: <strong>comunicação fragmentada, perda de informações e ausência de métricas confiáveis para a tomada de decisão.</strong><br>
-                    O sistema atuará como base de dados central, reunindo informações sobre pacientes, históricos de triagens e tratamentos, dentistas voluntários, coordenadores regionais, equipe interna e parceiros institucionais.
-                    A comunicação atualmente dispersa em diferentes canais será centralizada em um hub único, no qual todas as trocas de informações serão roteadas por tipo de demanda e nível de urgência.<br>
-                    Assim, conversas de e-mail, WhatsApp e telefone serão conectadas ao respectivo caso ou paciente, evitando retrabalho e perda de contexto.
-                    O sistema contará ainda com um chatbot com base de conhecimento inteligente, responsável por armazenar protocolos, documentos e históricos de problemas já solucionados. Isso permitirá buscas rápidas e garantirá consistência nos procedimentos.
-                    Além disso, haverá um painel analítico que exibirá métricas em tempo real e gerará relatórios automáticos com dashboards executivos, apresentando indicadores como atendimentos realizados, tempo de resposta, resolução de casos e projeções de demanda.<br>
-                    O diferencial do projeto está no seu desenho sob medida para ONGs da área da saúde, com inteligência contextual alimentada por dados reais, escalabilidade para expansão internacional e capacidade de integrar todos os pontos de comunicação e gestão em um único ambiente.
-                    Com isso, o sistema se tornará o alicerce tecnológico para sustentar o crescimento da Turma do Bem. O impacto direto incluirá maior agilidade operacional, processos registrados automaticamente e dados confiáveis para apoiar decisões estratégicas.
-                </p>
+    <main class="about-main">
+        <section class="about-hero full-bleed" aria-labelledby="about-title">
+            <div class="layout-wrapper about-hero-content">
+                <span class="section-tag">Nossa proposta</span>
+                <h1 id="about-title" class="highlight-title">Sobre a Central do Bem</h1>
+                <p class="page-intro about-hero-intro">Conheça os pilares da solução desenvolvida para modernizar processos, fortalecer a comunicação e gerar inteligência para a Turma do Bem.</p>
+                <div class="hero-actions">
+                    <button class="ghost-button" type="button" data-scroll-target="#visao-geral">Ver visão geral</button>
+                    <a class="primary-button" href="contato.html">Converse com a equipe</a>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <h1 class="titulo"><strong>SOBRE A TURMA DO BEM</strong></h1>
-
-        <h1>Programas da Turma do Bem</h1>
-        <div class="banner">
-            <div>
-                <img src="src/dentista-do-bem-1.png" alt="Programa Dentista do Bem">
-                <p id="justifyp">
-                    O Dentista do Bem é o principal programa da TdB, destinado a crianças e adolescentes em situação de vulnerabilidade social na faixa dos 11 a 17 anos. Os nossos beneficiários possuem graves problemas bucais e não têm condições financeiras de pagar pelo tratamento. Após serem selecionados e entrarem no programa, os jovens recebem atendimento odontológico e gratuito – independente da complexidade dos casos – até completarem 18 anos.
-                </p>
+        <section class="overview-grid" id="visao-geral" aria-labelledby="visao-title">
+            <div class="overview-media">
+                <img src="src/logo-turma-do-bem.png" alt="Logotipo da Central do Bem">
             </div>
-
-            <div>
-                <img src="src/apolonias-do-bem-1.png" alt="Programa Apolônias do Bem">
-                <p id="justifyp">
-                    Apolônias do Bem oferece tratamento odontológico e gratuito para mulheres cis e trans que vivenciaram situações de violência e tiveram a dentição afetada pelas agressões. As beneficiárias são selecionadas através de triagens em que passam por um rápido exame oral, não invasivo, e respondem a uma ferramenta científica que mede o impacto da saúde bucal na qualidade de vida de uma pessoa.
-                </p>
+            <div class="overview-content">
+                <h2 id="visao-title">Visão geral da solução</h2>
+                <p>A Central do Bem é um CRM inteligente desenhado para integrar toda a operação da Turma do Bem em um único ambiente digital. Ele nasce para resolver desafios como comunicação fragmentada, perda de informações e falta de métricas confiáveis para decisões estratégicas.</p>
+                <ul class="overview-list">
+                    <li><strong>Comunicação unificada:</strong> triagens, atendimentos e interações são conectados por meio de um hub que organiza demandas por urgência e tema.</li>
+                    <li><strong>Base de conhecimento inteligente:</strong> protocolos, documentos e históricos solucionados ficam disponíveis em buscas rápidas.</li>
+                    <li><strong>Métricas em tempo real:</strong> dashboards acompanhados por lideranças mostram atendimentos, tempo de resposta e projeções de demanda.</li>
+                    <li><strong>Escalabilidade:</strong> arquitetura pensada para expansão nacional e internacional, permitindo integrar novos parceiros com agilidade.</li>
+                </ul>
             </div>
-        </div>
+        </section>
 
-        <div class="banner" id="informacoes-sobre">
-            <div class="banner-inside-menor" id="verde">
-                <img src="src/jovens-atendidos.png" alt="Jovens atendidos">
-                <h2>+82 mil</h2>
-                <p><strong>jovens atendidos</strong></p>
+        <section class="solution-accordion" aria-labelledby="pilares-title">
+            <div class="layout-wrapper">
+                <header class="section-header">
+                    <span class="section-tag">Como funciona</span>
+                    <h2 id="pilares-title">Pilares da Central do Bem</h2>
+                    <p>Explore os módulos principais da solução e descubra como cada um contribui para fortalecer a rede de cuidado odontológico social.</p>
+                </header>
+
+                <div class="accordion-grid">
+                    <article class="accordion-item">
+                        <button class="accordion-button" type="button" aria-expanded="true">
+                            <span>Hub de relacionamento</span>
+                            <span class="accordion-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-panel">
+                            <p>Centraliza e-mails, mensagens e ligações em uma linha do tempo única. Equipes conseguem retomar conversas com contexto completo, sem perder histórico durante trocas de plantão.</p>
+                        </div>
+                    </article>
+
+                    <article class="accordion-item">
+                        <button class="accordion-button" type="button" aria-expanded="false">
+                            <span>Gestão de atendimentos</span>
+                            <span class="accordion-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-panel" hidden>
+                            <p>Organiza fluxos de triagens, marcações e acompanhamentos com regras de prioridade configuráveis. Cada caso recebe responsáveis definidos e alertas automáticos.</p>
+                        </div>
+                    </article>
+
+                    <article class="accordion-item">
+                        <button class="accordion-button" type="button" aria-expanded="false">
+                            <span>Insights e aprendizado</span>
+                            <span class="accordion-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-panel" hidden>
+                            <p>Dashboards analíticos alimentam líderes com dados de desempenho, enquanto o chatbot oferece respostas consistentes baseadas em casos reais e protocolos atualizados.</p>
+                        </div>
+                    </article>
+                </div>
             </div>
+        </section>
 
-            <div class="banner-inside-menor" id="verde">
-                <img src="src/mulheres-atendidas.png" alt="Mulheres atendidas">
-                <h2>+1,1 mil</h2>
-                <p><strong>mulheres atendidas</strong></p>
+        <section class="journey-timeline" aria-labelledby="jornada-title">
+            <div class="layout-wrapper">
+                <header class="section-header">
+                    <span class="section-tag">Jornada de atendimento</span>
+                    <h2 id="jornada-title">Do primeiro contato à transformação</h2>
+                    <p>Cada etapa do processo é acompanhada pelo sistema para garantir agilidade, acolhimento e registro completo das ações.</p>
+                </header>
+
+                <ol class="timeline-list">
+                    <li>
+                        <div class="timeline-node">1</div>
+                        <div class="timeline-card">
+                            <h3>Triagem inteligente</h3>
+                            <p>Formulários digitais e assistente virtual capturam dados essenciais para direcionar o atendimento ao time certo.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-node">2</div>
+                        <div class="timeline-card">
+                            <h3>Planejamento do cuidado</h3>
+                            <p>Coordenação regional distribui casos para dentistas voluntários com base em disponibilidade, especialidade e localização.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-node">3</div>
+                        <div class="timeline-card">
+                            <h3>Acompanhamento contínuo</h3>
+                            <p>Checklists, lembretes e protocolos garantem que procedimentos sejam concluídos e registrados no prontuário digital.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-node">4</div>
+                        <div class="timeline-card">
+                            <h3>Análise de impacto</h3>
+                            <p>Indicadores consolidados alimentam relatórios para parceiros e mantenedores, comprovando o alcance social da Turma do Bem.</p>
+                        </div>
+                    </li>
+                </ol>
             </div>
+        </section>
 
-            <div class="banner-inside-menor" id="verde">
-                <img src="src/dentistas-voluntarios.png" alt="Dentistas voluntários">
-                <h2>+18 mil</h2>
-                <p><strong>dentistas voluntários</strong></p>
+        <section class="about-metrics" aria-label="Indicadores consolidados">
+            <div class="layout-wrapper metric-grid">
+                <article class="metric-card">
+                    <strong class="metric-counter" data-count="82000">0</strong>
+                    <span>jovens atendidos</span>
+                </article>
+                <article class="metric-card">
+                    <strong class="metric-counter" data-count="1100">0</strong>
+                    <span>mulheres acolhidas</span>
+                </article>
+                <article class="metric-card">
+                    <strong class="metric-counter" data-count="18000">0</strong>
+                    <span>dentistas voluntários</span>
+                </article>
+                <article class="metric-card">
+                    <strong class="metric-counter" data-count="23">0</strong>
+                    <span>países com atuação</span>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="banner" id="banner2">
-            <div>
-                <img src="src/faca-uma-doacao-turma-do-bem.png" alt="Faça uma Doação">
-                <p id="justifyp">
-                    O Dentista do Bem é o principal programa da TdB, destinado a crianças e adolescentes em situação de vulnerabilidade social...
-                </p>
+        <section class="resource-showcase" aria-labelledby="saiba-mais-title">
+            <div class="layout-wrapper">
+                <header class="section-header">
+                    <span class="section-tag">Saiba mais</span>
+                    <h2 id="saiba-mais-title">A Turma do Bem está a um clique de distância</h2>
+                    <p>Explore materiais, torne-se voluntário ou compartilhe o projeto com sua rede para ampliar o alcance das ações.</p>
+                </header>
+
+                <div class="resource-grid">
+                    <article class="resource-card">
+                        <img src="src/faca-uma-doacao-turma-do-bem.png" alt="Faça uma doação para a Turma do Bem">
+                        <h3>Faça uma doação</h3>
+                        <p>Ajude a financiar procedimentos completos e a manutenção das clínicas parceiras.</p>
+                        <a class="link-button" href="https://turmadobem.org.br/doe/" target="_blank" rel="noopener">Contribuir</a>
+                    </article>
+                    <article class="resource-card">
+                        <img src="src/seja-dentista-voluntario-turma-do-bem.png" alt="Seja dentista voluntário">
+                        <h3>Seja dentista voluntário</h3>
+                        <p>Cadastre-se para receber capacitações e apoiar beneficiários em sua região.</p>
+                        <a class="link-button" href="https://turmadobem.org.br/dentista-do-bem/" target="_blank" rel="noopener">Quero participar</a>
+                    </article>
+                    <article class="resource-card">
+                        <img src="src/preciso-de-ajuda-turma-do-bem.png" alt="Preciso de ajuda com tratamento odontológico">
+                        <h3>Preciso de ajuda</h3>
+                        <p>Descubra como funciona a triagem e quais documentos levar no dia do atendimento.</p>
+                        <a class="link-button" href="https://turmadobem.org.br/preciso-de-ajuda/" target="_blank" rel="noopener">Solicitar apoio</a>
+                    </article>
+                </div>
             </div>
+        </section>
 
-            <div>
-                <img src="src/seja-dentista-voluntario-turma-do-bem.png" alt="Seja Voluntário">
-                <p id="justifyp">
-                    Apolônias do Bem oferece tratamento odontológico e gratuito para mulheres cis e trans que vivenciaram situações...
-                </p>
+        <section class="home-cta full-bleed" aria-labelledby="about-cta-title">
+            <div class="layout-wrapper home-cta-content">
+                <div>
+                    <span class="section-tag">Vamos juntos</span>
+                    <h2 id="about-cta-title">Quer pilotar a Central do Bem na sua organização?</h2>
+                    <p>Entre em contato para co-criar funcionalidades, validar hipóteses e gerar ainda mais impacto ao lado da Turma do Bem.</p>
+                </div>
+                <div class="hero-actions">
+                    <a class="primary-button" href="contato.html">Agendar uma conversa</a>
+                    <button class="ghost-button" type="button" data-scroll-target="#about-title">Voltar ao topo</button>
+                </div>
             </div>
-
-            <div>
-                <img src="src/preciso-de-ajuda-turma-do-bem.png" alt="Preciso de Ajuda">
-                <p id="justifyp">
-                    Apolônias do Bem oferece tratamento odontológico e gratuito para mulheres cis e trans que vivenciaram violência...
-                </p>
-            </div>
-        </div>
-
-        <h1>Saiba mais no site da Turma do Bem</h1>
-        <div class="cards">
-            <a href="https://turmadobem.org.br/" target="_blank" class="card">Saiba Mais</a>
-        </div>
+        </section>
     </main>
 
     <!-- Rodapé -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-about">
-                <img src="src/logocdb.png" alt="Turma do Bem" class="footer-logo">
+                <img src="src/logo-turma-do-bem.png" alt="Turma do Bem" class="footer-logo">
                 <p>Central do Bem – Plataforma interna desenvolvida para modernizar e integrar a comunicação da Turma do Bem.</p>
             </div>
 
@@ -165,5 +263,6 @@
         </div>
     </footer>
 
+    <script src="scripts/main.js" defer></script>
 </body>
 </html>
