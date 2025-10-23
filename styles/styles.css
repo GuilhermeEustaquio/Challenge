@@ -823,7 +823,8 @@ main p {
 
 .contact-page {
     position: relative;
-    background: radial-gradient(circle at top left, rgba(64, 145, 108, 0.18), transparent 55%),
+    background: radial-gradient(circle at top left, rgba(64, 145, 108, 0.18), transparent 55%);
+    padding-bottom: 5vh;
 
 }
 
