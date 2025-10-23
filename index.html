@@ -14,116 +14,224 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="home-page">
 
     <!-- Cabeçalho -->
-    <header>
-        <div class="logo">
-            <img src="src/logo-turma-do-bem.png" alt="Logo da Instituição">
-        </div>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="index.html" class="brand" aria-label="Voltar para a página inicial">
+                <img src="src/logo-turma-do-bem.png" alt="Logo da Turma do Bem">
+            </a>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">
-                        <img id="icons" src="/src/icon/home.png" alt=""> Home
-                    </a>
-                </li>
-                <li>
-                    <a href="quemsomos.html">
-                        <img id="icons" src="/src/icon/equipe.png" alt=""> Quem Somos?
-                    </a>
-                </li>
-                <li>
-                    <a href="sobre.html">
-                        <img id="icons" src="/src/icon/sobre.png" alt=""> Sobre
-                    </a>
-                </li>
-                <li>
-                    <a href="faq.html">
-                        <img id="icons" src="/src/icon/faq.png" alt=""> FAQ
-                    </a>
-                </li>
-                <li>
-                    <a href="contato.html">
-                        <img id="icons" src="/src/icon/contato.png" alt=""> Contato
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        
-        <div class="logo">
-            <img src="src/logocdb.png" style="width: 160px; margin-right: 20px;" alt="Logo da Instituição">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menu de navegação">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+
+            <nav class="site-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img class="nav-icon" src="src/icon/home.png" alt=""> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quemsomos.html">
+                            <img class="nav-icon" src="src/icon/equipe.png" alt=""> Quem Somos?
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">
+                            <img class="nav-icon" src="src/icon/sobre.png" alt=""> Sobre
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faq.html">
+                            <img class="nav-icon" src="src/icon/faq.png" alt=""> FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contato.html">
+                            <img class="nav-icon" src="src/icon/contato.png" alt=""> Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="index.html" class="brand brand-secondary" aria-label="Conheça a Central do Bem">
+                <img src="src/logocdb.png" alt="Logo Central do Bem">
+            </a>
         </div>
     </header>
 
     <!-- Conteúdo principal -->
-    <main>
-        <h1 class="titulo"><strong>SOBRE A TURMA DO BEM</strong></h1>
+    <main class="home-main">
+        <section class="home-hero full-bleed" aria-labelledby="inicio-title">
+            <div class="layout-wrapper">
+                <div class="home-hero-grid">
+                    <div class="home-hero-copy">
+                        <span class="section-tag">Comunicação integrada para a TdB</span>
+                        <h1 id="inicio-title" class="highlight-title">Central do Bem</h1>
+                        <p class="page-intro home-hero-intro">Uma plataforma pensada para integrar pessoas, dados e processos da Turma do Bem. Explore os programas, conheça os resultados e descubra como apoiar o projeto.</p>
+                        <div class="hero-actions">
+                            <a class="primary-button" href="sobre.html">Conheça a solução</a>
+                            <button class="ghost-button" type="button" data-scroll-target="#impacto">Ver impacto</button>
+                        </div>
+                    </div>
 
-        <h1>Programas da Turma do Bem</h1>
-        <div class="banner">
-            <div>
-                <img src="src/dentista-do-bem-1.png" alt="Programa Dentista do Bem">
-                <p id="justifyp">
-                    O Dentista do Bem é o principal programa da TdB, destinado a crianças e adolescentes em situação de vulnerabilidade social na faixa dos 11 a 17 anos. Os nossos beneficiários possuem graves problemas bucais e não têm condições financeiras de pagar pelo tratamento. Após serem selecionados e entrarem no programa, os jovens recebem atendimento odontológico e gratuito – independente da complexidade dos casos – até completarem 18 anos.
-                </p>
+                    <aside class="home-hero-panel" aria-label="Indicadores de impacto">
+                        <div class="hero-card" id="impacto">
+                            <h2>Impacto da Turma do Bem</h2>
+                            <ul class="hero-stats">
+                                <li>
+                                    <strong class="metric-counter" data-count="82000">0</strong>
+                                    <span>jovens atendidos</span>
+                                </li>
+                                <li>
+                                    <strong class="metric-counter" data-count="1100">0</strong>
+                                    <span>mulheres acolhidas</span>
+                                </li>
+                                <li>
+                                    <strong class="metric-counter" data-count="18000">0</strong>
+                                    <span>dentistas voluntários</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="hero-shortcuts" aria-label="Atalhos rápidos">
+                            <a class="shortcut-link" href="contato.html">Fale com a equipe</a>
+                            <a class="shortcut-link" href="faq.html">Perguntas frequentes</a>
+                            <a class="shortcut-link" href="https://turmadobem.org.br/" target="_blank" rel="noopener">Site oficial da TdB</a>
+                        </div>
+                    </aside>
+                </div>
             </div>
+        </section>
 
-            <div>
-                <img src="src/apolonias-do-bem-1.png" alt="Programa Apolônias do Bem">
-                <p id="justifyp">
-                    Apolônias do Bem oferece tratamento odontológico e gratuito para mulheres cis e trans que vivenciaram situações de violência e tiveram a dentição afetada pelas agressões. As beneficiárias são selecionadas através de triagens em que passam por um rápido exame oral, não invasivo, e respondem a uma ferramenta científica que mede o impacto da saúde bucal na qualidade de vida de uma pessoa.
-                </p>
+        <section class="home-highlights">
+            <div class="layout-wrapper">
+                <header class="section-header">
+                    <span class="section-tag">Por que importa</span>
+                    <h2>Uma plataforma que aproxima pessoas</h2>
+                    <p>A Central do Bem nasce para eliminar ruídos na comunicação e fortalecer o ecossistema de cuidado odontológico promovido pela Turma do Bem.</p>
+                </header>
+
+                <div class="highlight-grid">
+                    <article class="highlight-card" tabindex="0">
+                        <div class="highlight-icon">🤝</div>
+                        <h3>Integra equipes</h3>
+                        <p>Fluxos unificados conectam voluntários, coordenadores e beneficiários, garantindo que cada demanda tenha acompanhamento contínuo.</p>
+                        <button class="link-button" type="button" data-scroll-target="#programas">Ver programas</button>
+                    </article>
+                    <article class="highlight-card" tabindex="0">
+                        <div class="highlight-icon">💡</div>
+                        <h3>Transforma dados em ação</h3>
+                        <p>Dashboards inteligentes mostram indicadores de atendimento em tempo real, apoiando decisões estratégicas e distribuindo recursos de forma assertiva.</p>
+                        <button class="link-button" type="button" data-scroll-target="#programas">Explorar soluções</button>
+                    </article>
+                    <article class="highlight-card" tabindex="0">
+                        <div class="highlight-icon">💬</div>
+                        <h3>Atendimento humanizado</h3>
+                        <p>Chatbots e roteamento automático organizam os chamados, preservando o contexto de cada história e acelerando o suporte.</p>
+                        <button class="link-button" type="button" data-scroll-target="#recursos">Ir para recursos</button>
+                    </article>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="banner" id="informacoes-sobre">
-            <div class="banner-inside-menor" id="verde">
-                <img src="src/jovens-atendidos.png" alt="jovens atendidos">
-                <h2>+82 mil</h2>
-                <p><strong>jovens atendidos</strong></p>
+        <section class="program-tabs" id="programas" aria-labelledby="programas-title">
+            <div class="layout-wrapper">
+                <header class="section-header">
+                    <span class="section-tag">Programas da Turma do Bem</span>
+                    <h2 id="programas-title">Conheça nossas frentes de cuidado</h2>
+                    <p>Selecione um programa para entender como a Turma do Bem transforma trajetórias por meio da odontologia social.</p>
+                </header>
+
+                <div class="tab-controls" role="tablist" aria-label="Programas">
+                    <button class="tab-button is-active" type="button" role="tab" aria-selected="true" aria-controls="tab-dentista" data-tab="dentista">Dentista do Bem</button>
+                    <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="tab-apolonias" data-tab="apolonias">Apolônias do Bem</button>
+                    <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="tab-rede" data-tab="rede">Rede de Voluntários</button>
+                </div>
+
+                <div class="tab-panels">
+                    <article id="tab-dentista" class="tab-panel is-active" role="tabpanel" tabindex="0" data-tab-panel="dentista">
+                        <div class="tab-panel-content">
+                            <img src="src/dentista-do-bem-1.png" alt="Jovem atendido pelo programa Dentista do Bem">
+                            <div>
+                                <h3>Dentista do Bem</h3>
+                                <p>O principal programa da TdB atende crianças e adolescentes em situação de vulnerabilidade entre 11 e 17 anos. Após a triagem, cada jovem recebe acompanhamento odontológico completo e gratuito até completar 18 anos, independentemente da complexidade do caso.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="tab-apolonias" class="tab-panel" role="tabpanel" tabindex="0" data-tab-panel="apolonias" hidden>
+                        <div class="tab-panel-content">
+                            <img src="src/apolonias-do-bem-1.png" alt="Mulheres atendidas pelo programa Apolônias do Bem">
+                            <div>
+                                <h3>Apolônias do Bem</h3>
+                                <p>Voltado para mulheres cis e trans que sofreram violência e tiveram a dentição comprometida, o programa oferece triagem humanizada e tratamentos completos. As beneficiárias ganham autonomia e autoestima para reconstruir suas histórias.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="tab-rede" class="tab-panel" role="tabpanel" tabindex="0" data-tab-panel="rede" hidden>
+                        <div class="tab-panel-content">
+                            <img src="src/seja-dentista-voluntario-turma-do-bem.png" alt="Rede de dentistas voluntários da Turma do Bem">
+                            <div>
+                                <h3>Rede de Voluntários</h3>
+                                <p>Mais de 18 mil dentistas formam a rede que faz a Central do Bem acontecer. Com capacitações contínuas e suporte remoto, os profissionais recebem os casos com todo o histórico registrado, agilizando procedimentos e garantindo acolhimento.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
+        </section>
 
-            <div class="banner-inside-menor" id="verde">
-                <img src="src/mulheres-atendidas.png" alt="mulheres atendidas">
-                <h2>+1,1 mil</h2>
-                <p><strong>mulheres atendidas</strong></p>
+        <section class="resource-showcase" id="recursos" aria-labelledby="recursos-title">
+            <div class="layout-wrapper">
+                <header class="section-header">
+                    <span class="section-tag">Canais de apoio</span>
+                    <h2 id="recursos-title">Encontre a melhor forma de se conectar</h2>
+                    <p>Contribua com o impacto social da Turma do Bem, participe como voluntário ou peça ajuda. Cada ação amplia o acesso à saúde bucal.</p>
+                </header>
+
+                <div class="resource-grid">
+                    <article class="resource-card">
+                        <img src="src/faca-uma-doacao-turma-do-bem.png" alt="Faça uma doação para a Turma do Bem">
+                        <h3>Faça uma doação</h3>
+                        <p>Contribua para manter os tratamentos em andamento e financiar novos atendimentos pelo Brasil.</p>
+                        <a class="link-button" href="https://paybox.doare.org/paybox?payboxId=83fed202-df0f-4665-9c74-688a834028d4" target="_blank" rel="noopener">Quero doar</a>
+                    </article>
+
+                    <article class="resource-card">
+                        <img src="src/seja-dentista-voluntario-turma-do-bem.png" alt="Seja dentista voluntário">
+                        <h3>Seja dentista voluntário</h3>
+                        <p>Integre-se a uma rede colaborativa com suporte constante e materiais padronizados de atendimento.</p>
+                        <a class="link-button" href="https://turmadobem.org.br/dentista-do-bem/" target="_blank" rel="noopener">Participar</a>
+                    </article>
+
+                    <article class="resource-card">
+                        <img src="src/preciso-de-ajuda-turma-do-bem.png" alt="Preciso de ajuda com tratamento odontológico">
+                        <h3>Preciso de ajuda</h3>
+                        <p>Descubra como solicitar triagens presenciais ou remotas e iniciar sua jornada de cuidado.</p>
+                        <a class="link-button" href="https://d400000007bqdeaa.my.salesforce-sites.com/triagem/?eventoNum=a0CbJ00002qxZ5V" target="_blank" rel="noopener">Solicitar suporte</a>
+                    </article>
+                </div>
             </div>
+        </section>
 
-            <div class="banner-inside-menor" id="verde">
-                <img src="src/dentistas-voluntarios.png" alt="dentistas voluntários">
-                <h2>+18 mil</h2>
-                <p><strong>dentistas voluntários</strong></p>
+        <section class="home-cta full-bleed" aria-labelledby="cta-title">
+            <div class="layout-wrapper home-cta-content">
+                <div>
+                    <span class="section-tag">Pronto para colaborar?</span>
+                    <h2 id="cta-title">A Central do Bem está aberta para novas parcerias</h2>
+                    <p>Estamos estruturando pilotos com organizações sociais, universidades e empresas que desejam potencializar o alcance da Turma do Bem. Vamos conversar?</p>
+                </div>
+                <div class="hero-actions">
+                    <a class="primary-button" href="contato.html">Falar com a equipe</a>
+                    <button class="ghost-button" type="button" data-scroll-target="#inicio-title">Voltar ao topo</button>
+                </div>
             </div>
-        </div>
-
-        <div class="banner" id="banner2">
-            <div>
-                <img src="src/faca-uma-doacao-turma-do-bem.png" alt="Faça uma doação">
-                <p id="justifyp">
-                    O Dentista do Bem é o principal programa da TdB, destinado a crianças e adolescentes em situação de vulnerabilidade social...
-                </p>
-            </div>
-
-            <div>
-                <img src="src/seja-dentista-voluntario-turma-do-bem.png" alt="Seja voluntário">
-                <p id="justifyp">
-                    Apolônias do Bem oferece tratamento odontológico e gratuito para mulheres cis e trans que vivenciaram situações de violência...
-                </p>
-            </div>
-
-            <div>
-                <img src="src/preciso-de-ajuda-turma-do-bem.png" alt="Preciso de ajuda">
-                <p id="justifyp">
-                    Apolônias do Bem oferece tratamento odontológico e gratuito para mulheres cis e trans...
-                </p>
-            </div>
-        </div>
-
-        <div class="cards">
-            <a href="sobre.html" class="card">Saiba Mais</a>
-        </div>
+        </section>
     </main>
 
     <!-- Rodapé -->
@@ -168,5 +276,6 @@
         </div>
     </footer>
 
+    <script src="scripts/main.js" defer></script>
 </body>
 </html>
