@@ -1,0 +1,60 @@
+@media (max-width: 575px) {
+    main {
+        padding-top: 5rem;
+    }
+
+    .home-main,
+    .about-main,
+    .contact-page {
+        padding-top: 0;
+    }
+
+    .banner {
+        gap: 1.5rem;
+    }
+
+    .banner img {
+        border-radius: 16px;
+    }
+
+    .banner > div {
+        padding: 1.25rem;
+    }
+
+    .card {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-about,
+    .footer-links,
+    .footer-contact {
+        align-items: center;
+    }
+
+    .faq-card {
+        padding: 1.5rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-card {
+        padding: 1.35rem;
+    }
+
+    .hero-shortcuts {
+        padding: 1.1rem;
+    }
+
+    .resource-card {
+        padding: 1.5rem;
+    }
+}

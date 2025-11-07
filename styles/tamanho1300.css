@@ -1,0 +1,7 @@
+@media (min-width: 1300px) {
+    main,
+    .footer-container,
+    .header-content {
+        max-width: 1200px;
+    }
+}

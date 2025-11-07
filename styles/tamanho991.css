@@ -1,0 +1,22 @@
+@media (max-width: 991px) {
+    .brand-secondary {
+        display: none;
+    }
+
+    .site-nav ul {
+        gap: 0.5rem;
+    }
+
+    .banner > div {
+        padding: 1.5rem;
+    }
+
+    .faq-answer {
+        flex-direction: column;
+    }
+
+    .faq-answer .faq-avatar {
+        width: 64px;
+        height: 64px;
+    }
+}
