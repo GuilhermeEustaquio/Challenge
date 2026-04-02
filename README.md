@@ -37,9 +37,10 @@ O objetivo do projeto é **facilitar a gestão de informações e comunicação 
 ---
 
 ## ⚡ Tecnologias Utilizadas na parte de Front-End
-- HTML e CSS  
+- Vite
+- React
 - Git e GitHub
-- JavaScript
+- Typescript
 
 ---
 
