@@ -7,7 +7,9 @@ Este projeto foi desenvolvido para a parte de Front-End do projeto Central do Be
 
 ## 🔗 Link do Projeto
 Acesse o projeto no GitHub:  
-[🌐 Acessar Projeto](https://github.com/guilhermeeustaquio/Challenge)
+[ Acessar Projeto](https://github.com/guilhermeeustaquio/Challenge)
+
+[Video no Youtube demonstrando o projeto](https://youtu.be/nRJ7Bidjgvg)
 
 
 ---
