@@ -9,6 +9,52 @@ Este projeto foi desenvolvido para a parte de Front-End do projeto Central do Be
 Acesse o projeto no GitHub:  
 [🌐 Acessar Projeto](https://github.com/guilhermeeustaquio/Challenge)
 
+
+---
+
+## 🚀 Como rodar o projeto
+
+Siga os passos abaixo para executar o projeto localmente:
+
+### Clone o repositório
+```bash
+git clone https://github.com/guilhermeeustaquio/Challenge.git
+
+```
+
+### Acesse a pasta do projeto
+
+```bash
+
+cd Challenge
+
+```
+
+###  Instale as dependências
+
+```bash
+
+npm install
+
+```
+
+### Execute o projeto 
+```bash
+npm run dev
+
+```
+
+### Abra o projeto no navegador
+Aparecerá um link semelhante ao link a seguir
+
+Basta copiar e colar no navegador para visualizar o projeto
+```bash
+http://localhost:5173/
+
+```
+
+
+
 ---
 
 ## 👥 Equipe
