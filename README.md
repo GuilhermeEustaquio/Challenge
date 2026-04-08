@@ -82,6 +82,48 @@ O objetivo do projeto é **facilitar a gestão de informações e comunicação 
 
 ---
 
+## 📁 Estrutura de Pastas
+
+```
+Challenge/
+├── imagem/                     # Imagens estáticas do projeto
+│   ├── icon/                   # Ícones de navegação
+│   └── *.png / *.jpg           # Demais imagens
+├── public/                     # Arquivos públicos (favicon, ícones SVG)
+├── src/
+│   ├── assets/
+│   │   └── data.ts             # Dados estáticos da aplicação
+│   ├── components/             # Componentes reutilizáveis
+│   │   ├── Accordion/
+│   │   ├── Button/
+│   │   ├── Card/
+│   │   ├── Footer/
+│   │   ├── Header/
+│   │   ├── Layout/
+│   │   ├── MetricCard/
+│   │   └── SectionHeader/
+│   ├── pages/                  # Páginas da aplicação
+│   │   ├── Contato/
+│   │   ├── FAQ/
+│   │   ├── Home/
+│   │   ├── Integrantes/
+│   │   ├── Sobre/
+│   │   └── Solucao/
+│   ├── routes/
+│   │   └── AppRoutes.tsx       # Definição das rotas
+│   ├── types/
+│   │   └── index.ts            # Tipos TypeScript globais
+│   ├── App.tsx                 # Componente raiz
+│   ├── main.tsx                # Ponto de entrada
+│   └── index.css               # Estilos globais
+├── index.html
+├── vite.config.ts
+├── tailwind.config.js
+└── package.json
+```
+
+---
+
 ## ⚡ Tecnologias Utilizadas na parte de Front-End
 - Vite
 - React
