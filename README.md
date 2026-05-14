@@ -14,7 +14,13 @@ Acesse o projeto no GitHub:
 
 ---
 
-## 🚀 Como rodar o projeto
+## 🚀 Como Usar
+
+🔗 Deploy na Vercel: [URL_DA_VERCEL_AQUI]
+
+📹 Vídeo no YouTube: [URL_DO_VIDEO_AQUI]
+
+---
 
 Siga os passos abaixo para executar o projeto localmente:
 
@@ -41,6 +47,22 @@ cd Challenge
 npm install
 
 ```
+
+### Configure as variáveis de ambiente
+
+Crie um arquivo `.env` na raiz do projeto a partir do `.env.example`:
+
+```bash
+cp .env.example .env
+```
+
+Edite o `.env` com a URL da sua API:
+
+```
+VITE_API_URL=https://sua-api.onrender.com
+```
+
+> Se `VITE_API_URL` não for definida, o projeto usa `https://jsonplaceholder.typicode.com` como API de demonstração.
 
 ### Execute o projeto 
 ```bash

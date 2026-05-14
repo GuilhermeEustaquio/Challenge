@@ -7,6 +7,7 @@ export const navItems: NavItem[] = [
   { label: 'Contato', path: '/contato' },
   { label: 'Integrantes', path: '/integrantes' },
   { label: 'Solução', path: '/solucao' },
+  { label: 'Voluntários', path: '/voluntarios' },
 ];
 
 export const teamMembers: TeamMember[] = [

@@ -7,6 +7,8 @@ import { Integrantes } from '../pages/Integrantes/Integrantes';
 import { SolucaoDetalhe } from '../pages/Solucao/SolucaoDetalhe';
 import { Solucao } from '../pages/Solucao/Solucao';
 import { Sobre } from '../pages/Sobre/Sobre';
+import { VoluntarioDetalhe } from '../pages/Voluntarios/VoluntarioDetalhe';
+import { Voluntarios } from '../pages/Voluntarios/Voluntarios';
 
 export function AppRoutes() {
   return (
@@ -20,6 +22,8 @@ export function AppRoutes() {
         <Route path="/integrantes" element={<Integrantes />} />
         <Route path="/solucao" element={<Solucao />} />
         <Route path="/solucao/:id" element={<SolucaoDetalhe />} />
+        <Route path="/voluntarios" element={<Voluntarios />} />
+        <Route path="/voluntario/:id" element={<VoluntarioDetalhe />} />
       </Routes>
     </Layout>
   );
