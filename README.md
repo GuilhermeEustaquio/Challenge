@@ -179,7 +179,7 @@ npm run preview # Visualiza o build localmente
     </td>
     <td><strong>Guilherme Eustaquio</strong></td>
     <td>566784</td>
-    <td>1TDS Agosto</td>
+    <td>1TDSPS</td>
     <td>
       <a href="https://github.com/guilhermeeustaquio">
         <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
@@ -197,7 +197,7 @@ npm run preview # Visualiza o build localmente
     </td>
     <td><strong>Caio Couto</strong></td>
     <td>563452</td>
-    <td>1TDS Agosto</td>
+    <td>1TDSPS</td>
     <td>
       <a href="https://github.com/caioccouto">
         <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
@@ -215,7 +215,7 @@ npm run preview # Visualiza o build localmente
     </td>
     <td><strong>Matheus Tavares</strong></td>
     <td>566844</td>
-    <td>1TDS Agosto</td>
+    <td>1TDSPS</td>
     <td>
       <a href="https://github.com/manovares">
         <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
