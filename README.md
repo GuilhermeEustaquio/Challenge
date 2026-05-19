@@ -175,7 +175,7 @@ npm run preview # Visualiza o build localmente
   </tr>
   <tr>
     <td align="center">
-      <img src="imagem/euperfil.jpg" alt="Guilherme Eustaquio" width="80" style="border-radius:50%"/>
+      <img src="imagem/eustaquio.PNG" alt="Guilherme Eustaquio" width="80" style="border-radius:50%"/>
     </td>
     <td><strong>Guilherme Eustaquio</strong></td>
     <td>566784</td>
@@ -245,5 +245,5 @@ Entre em contato com a equipe pelos perfis do LinkedIn acima ou abra uma [issue 
 - Não há autenticação nesta versão.
 
 <div align="center">
-  <sub>Desenvolvido com ❤️ pela equipe Central do Bem — FIAP 1TDS Agosto</sub>
+  <sub>Desenvolvido pela equipe Central do Bem — FIAP 1TDS Agosto</sub>
 </div>
