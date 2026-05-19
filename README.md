@@ -140,3 +140,61 @@ Challenge/
 - Este repositório é destinado à avaliação do projeto.  
 
 
+
+## ⚡ Tecnologias Utilizadas
+- React
+- Vite
+- TypeScript
+- TailwindCSS
+- React Router DOM
+- React Hook Form
+- Fetch API
+- Java/Quarkus (backend previsto)
+- Oracle (banco previsto)
+
+## Preparação para Sprint 4
+O front-end agora está preparado para consumir a API Java/Quarkus via REST sem depender dela neste momento.
+
+### Configuração da API
+1. Copie `.env.example` para `.env`.
+2. Defina `VITE_API_URL` com a URL do backend (ex: `http://localhost:8080`).
+3. Se `VITE_API_URL` não estiver definido, o projeto usa automaticamente dados mockados de `src/mocks/mockData.ts`.
+
+### Módulos funcionais já prontos
+- Beneficiários
+- Dentistas
+- Doadores
+- Doações
+- Voluntários
+- Triagens
+- Dashboard de resumo em `/solucao`
+
+### Endpoints esperados
+- `/beneficiarios` (GET, GET por id, POST, PUT, DELETE)
+- `/dentistas` (GET, GET por id, POST, PUT, DELETE)
+- `/doadores` (GET, GET por id, POST, PUT, DELETE)
+- `/doacoes` (GET, GET por id, POST, PUT, DELETE)
+- `/voluntarios` (GET, GET por id, POST, PUT, DELETE)
+- `/triagens` (GET, GET por id, POST, PUT, DELETE)
+- `/dashboard/resumo` (GET)
+
+### Como rodar localmente
+```bash
+npm install
+npm run dev
+npm run build
+```
+
+### Deploys
+- URL da Vercel: _preencher_
+- URL da API publicada: _preencher_
+
+## Sprint 4 - Área de Gestão da Solução
+- A página `/solucao` funciona como área de gestão principal.
+- Há abas para Beneficiários, Dentistas, Doadores, Doações, Voluntários e Triagens.
+- Cada aba permite listar, adicionar, atualizar e deletar registros.
+- Sem `VITE_API_URL`, o sistema usa mocks internos.
+- Com `VITE_API_URL`, o front fica preparado para consumir a API Java/Quarkus.
+- Não há login nesta versão.
+- Não há filtro por usuário.
+- Os dados representam tabelas específicas do backend Java.

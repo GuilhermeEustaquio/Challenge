@@ -38,7 +38,7 @@ export function Contato() {
 
             <div className="space-y-1">
               <label htmlFor="txtEmail" className="text-sm font-semibold text-slate-800">E-mail</label>
-              <input type="email" id="txtEmail" placeholder="nome@email.com" className="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20" {...register('email', { required: 'E-mail é obrigatório' })} />
+              <input type="email" id="txtEmail" placeholder="nome@email.com" className="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20" {...register('email', { required: 'E-mail é obrigatório', pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: 'Informe um e-mail válido' } })} />
               {errors.email && <small className="text-xs text-rose-600">{errors.email.message}</small>}
             </div>
 
@@ -49,8 +49,9 @@ export function Contato() {
 
             <div className="space-y-1">
               <label htmlFor="txtMsg" className="text-sm font-semibold text-slate-800">Mensagem</label>
-              <textarea id="txtMsg" placeholder="Conte como podemos ajudar" rows={4} className="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20" {...register('mensagem', { required: true })} />
+              <textarea id="txtMsg" placeholder="Conte como podemos ajudar" rows={4} className="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20" {...register('mensagem', { required: 'Mensagem é obrigatória' })} />
             </div>
+              {errors.mensagem && <small className="text-xs text-rose-600">{errors.mensagem.message}</small>}
 
             <button type="submit" className="rounded-2xl bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-700 hover:shadow-md active:scale-[0.97]">Enviar mensagem</button>
             {isSubmitSuccessful && <p className="text-sm font-medium text-emerald-700">Mensagem enviada com sucesso!</p>}
