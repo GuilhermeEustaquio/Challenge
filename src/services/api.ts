@@ -8,13 +8,20 @@ const getFriendlyError = (status: number): string => {
 };
 
 const request = async <T>(endpoint: string, init?: RequestInit): Promise<T> => {
-  const response = await fetch(`${API_BASE_URL}${endpoint}`, {
-    headers: {
-      'Content-Type': 'application/json',
-      ...(init?.headers ?? {}),
-    },
-    ...init,
-  });
+  let response: Response;
+  try {
+    response = await fetch(`${API_BASE_URL}${endpoint}`, {
+      headers: {
+        'Content-Type': 'application/json',
+        ...(init?.headers ?? {}),
+      },
+      ...init,
+    });
+  } catch {
+    throw new Error(
+      'Não foi possível conectar ao backend. Verifique se a API está ligada, se a URL está correta e se o CORS está liberado.'
+    );
+  }
 
   const text = await response.text();
 

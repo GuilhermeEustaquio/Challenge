@@ -109,6 +109,11 @@ function EntityRow({ tab, item }: { tab: TabKey; item: any }) {
       <div className="min-w-0 flex-1 space-y-1">
         <div className="flex flex-wrap items-center gap-2">
           <p className="font-semibold text-slate-800">{label}</p>
+          {item.id != null && (
+            <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-mono text-slate-500">
+              ID #{item.id}
+            </span>
+          )}
           {badge}
         </div>
         {details}
@@ -300,9 +305,9 @@ export function Solucao() {
       await carregarDados(false);
     } catch (error) {
       console.error('Erro ao salvar registro:', error);
-
+      const mensagemErro = error instanceof Error ? error.message : 'Erro desconhecido ao salvar.';
       setMsg({
-        text: 'Ocorreu um erro ao salvar. Tente novamente.',
+        text: `Erro ao salvar: ${mensagemErro}`,
         type: 'error',
       });
     }
@@ -318,8 +323,9 @@ export function Solucao() {
       await serviceMap[tab].remover(deleteTarget.id);
       setData((p) => ({ ...p, [tab]: p[tab].filter((x: any) => x.id !== deleteTarget.id) }));
       setMsg({ text: 'Registro excluído com sucesso!', type: 'success' });
-    } catch {
-      setMsg({ text: 'Ocorreu um erro ao excluir. Tente novamente.', type: 'error' });
+    } catch (error) {
+      const mensagemErro = error instanceof Error ? error.message : 'Erro desconhecido ao excluir.';
+      setMsg({ text: `Erro ao excluir: ${mensagemErro}`, type: 'error' });
     }
     setDeleteTarget(null);
   };
