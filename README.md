@@ -5,9 +5,9 @@
 
   **Plataforma centralizada de gestão e comunicação para a Turma do Bem**
 
-  [![GitHub repo](https://img.shields.io/badge/GitHub-Repositório-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/guilhermeeustaquio/Challenge)
-  [![YouTube](https://img.shields.io/badge/YouTube-Demonstração-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/nRJ7Bidjgvg)
-  [![Vercel](https://img.shields.io/badge/Vercel-Deploy-000000?style=for-the-badge&logo=vercel&logoColor=white)](#deploys)
+  [![GitHub repo](https://img.shields.io/badge/Repositório-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/guilhermeeustaquio/Challenge)
+  [![YouTube](https://img.shields.io/badge/Demonstração-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/nRJ7Bidjgvg)
+  [![Vercel](https://img.shields.io/badge/Deploy-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://challenge-eosin-theta.vercel.app/)
 </div>
 
 ---
