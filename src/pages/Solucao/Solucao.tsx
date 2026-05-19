@@ -558,10 +558,14 @@ export function Solucao() {
 
           {/* ── DOAÇÕES ──────────────────────────────────────────────────── */}
           {tab === 'doacoes' && <>
-            <FormInput
-              label="ID do doador" type="number"
+            <FormSelect
+              label="Doador"
               disabled={disabled('doadorId')}
-              registration={register('doadorId', { valueAsNumber: true, required: 'Obrigatório', min: { value: 1, message: 'ID inválido' } })}
+              registration={register('doadorId', { valueAsNumber: true, required: 'Obrigatório', validate: (v) => (v > 0) || 'Selecione um doador' })}
+              options={[
+                { label: 'Selecione um doador...', value: '' },
+                ...data.doadores.map((d: any) => ({ label: `#${d.id} — ${d.nome}`, value: String(d.id) })),
+              ]}
               error={errors.doadorId}
             />
             <FormInput
@@ -621,15 +625,23 @@ export function Solucao() {
 
           {/* ── TRIAGENS ─────────────────────────────────────────────────── */}
           {tab === 'triagens' && <>
-            <FormInput
-              label="ID do beneficiário" type="number"
+            <FormSelect
+              label="Beneficiário"
               disabled={disabled('idBenef')}
-              registration={register('idBenef', { valueAsNumber: true, required: 'Obrigatório', min: { value: 1, message: 'ID inválido' } })}
+              registration={register('idBenef', { valueAsNumber: true, required: 'Obrigatório', validate: (v) => (v > 0) || 'Selecione um beneficiário' })}
+              options={[
+                { label: 'Selecione um beneficiário...', value: '' },
+                ...data.beneficiarios.map((b: any) => ({ label: `#${b.id} — ${b.nome}`, value: String(b.id) })),
+              ]}
               error={errors.idBenef}
             />
-            <FormInput
-              label="ID do voluntário" type="number"
-              registration={register('idVolun', { valueAsNumber: true, required: 'Obrigatório', min: { value: 1, message: 'ID inválido' } })}
+            <FormSelect
+              label="Voluntário"
+              registration={register('idVolun', { valueAsNumber: true, required: 'Obrigatório', validate: (v) => (v > 0) || 'Selecione um voluntário' })}
+              options={[
+                { label: 'Selecione um voluntário...', value: '' },
+                ...data.voluntarios.map((v: any) => ({ label: `#${v.id} — ${v.nome}`, value: String(v.id) })),
+              ]}
               error={errors.idVolun}
             />
             <FormInput
