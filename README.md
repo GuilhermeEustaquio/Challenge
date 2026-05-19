@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="imagem/logocdb.png" alt="Logo Central do Bem" width="180"/>
+  <img src="imagem/logo-turma-do-bem.png" alt="Logo Central do Bem" width="180"/>
 
   # Central do Bem — Front-End
 
@@ -31,9 +31,9 @@ Facilitar a **gestão de informações e a comunicação** entre equipe e pacien
 ## 🖼️ Imagens do Projeto
 
 <div align="center">
-  <img src="imagem/logo-turma-do-bem.png" alt="Logo Turma do Bem" width="220"/>
+  <img src="imagem/logocdb.png" alt="Logo Turma do Bem" width="220"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="imagem/logocdb.png" alt="Logo Central do Bem" width="180"/>
+  <img src="imagem/logo-turma-do-bem.png" alt="Logo Central do Bem" width="180"/>
 </div>
 
 > As imagens e ícones do projeto estão armazenados na pasta `imagem/` e utilizados como ativos estáticos ao longo da aplicação.
