@@ -9,30 +9,61 @@ const getFriendlyError = (status: number): string => {
 
 const request = async <T>(endpoint: string, init?: RequestInit): Promise<T> => {
   const response = await fetch(`${API_BASE_URL}${endpoint}`, {
-    headers: { 'Content-Type': 'application/json', ...(init?.headers ?? {}) },
+    headers: {
+      'Content-Type': 'application/json',
+      ...(init?.headers ?? {}),
+    },
     ...init,
   });
 
+  const text = await response.text();
+
   if (!response.ok) {
     let message = '';
+
     try {
-      const json = await response.json();
-      message = json?.message ?? '';
+      const json = text ? JSON.parse(text) : null;
+      message = json?.message ?? json?.error ?? '';
     } catch {
-      message = '';
+      message = text || '';
     }
+
     throw new Error(message || getFriendlyError(response.status));
   }
 
-  if (response.status === 204) return undefined as T;
-  return (await response.json()) as T;
+  if (response.status === 204 || !text.trim()) {
+    return undefined as T;
+  }
+
+  try {
+    return JSON.parse(text) as T;
+  } catch {
+    return text as T;
+  }
 };
 
 export const isApiEnabled = (): boolean => API_BASE_URL.trim().length > 0;
 
-export const apiGet = <T,>(endpoint: string): Promise<T> => request<T>(endpoint, { method: 'GET' });
-export const apiPost = <TRequest, TResponse>(endpoint: string, body: TRequest): Promise<TResponse> =>
-  request<TResponse>(endpoint, { method: 'POST', body: JSON.stringify(body) });
-export const apiPut = <TRequest, TResponse>(endpoint: string, body: TRequest): Promise<TResponse> =>
-  request<TResponse>(endpoint, { method: 'PUT', body: JSON.stringify(body) });
-export const apiDelete = (endpoint: string): Promise<void> => request<void>(endpoint, { method: 'DELETE' });
+export const apiGet = <T,>(endpoint: string): Promise<T> =>
+  request<T>(endpoint, { method: 'GET' });
+
+export const apiPost = <TRequest, TResponse>(
+  endpoint: string,
+  body: TRequest,
+): Promise<TResponse> =>
+  request<TResponse>(endpoint, {
+    method: 'POST',
+    body: JSON.stringify(body),
+  });
+
+export const apiPut = <TRequest, TResponse>(
+  endpoint: string,
+  body: TRequest,
+): Promise<TResponse> =>
+  request<TResponse>(endpoint, {
+    method: 'PUT',
+    body: JSON.stringify(body),
+  });
+
+export const apiDelete = (endpoint: string): Promise<void> =>
+  request<void>(endpoint, { method: 'DELETE' });

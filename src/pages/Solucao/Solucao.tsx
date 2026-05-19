@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { AddressSection } from '../../components/AddressSection/AddressSection';
 import { ConfirmDialog } from '../../components/ConfirmDialog/ConfirmDialog';
@@ -148,21 +148,64 @@ export function Solucao() {
   const { register, handleSubmit, reset, control, setValue, formState: { errors, isSubmitting } } = useForm<any>();
   const apiAtiva = isApiEnabled();
 
-  useEffect(() => {
+  const carregarDados = useCallback(async (mostrarErro = true) => {
     setLoading(true);
-    Promise.all([
-      beneficiarioService.listar(),
-      dentistaService.listar(),
-      doadorService.listar(),
-      doacaoService.listar(),
-      voluntarioService.listar(),
-      triagemService.listar(),
-    ])
-      .then(([beneficiarios, dentistas, doadores, doacoes, voluntarios, triagens]) => {
-        setData({ beneficiarios, dentistas, doadores, doacoes, voluntarios, triagens });
-      })
-      .finally(() => setLoading(false));
+
+    const erros: string[] = [];
+
+    const safeList = async <T,>(
+      nome: string,
+      listar: () => Promise<T[]>,
+    ): Promise<T[]> => {
+      try {
+        return await listar();
+      } catch (error) {
+        console.error(`Erro ao carregar ${nome}:`, error);
+        erros.push(nome);
+        return [];
+      }
+    };
+
+    try {
+      const [
+        beneficiarios,
+        dentistas,
+        doadores,
+        doacoes,
+        voluntarios,
+        triagens,
+      ] = await Promise.all([
+        safeList<Beneficiario>('beneficiários', beneficiarioService.listar),
+        safeList<Dentista>('dentistas', dentistaService.listar),
+        safeList<Doador>('doadores', doadorService.listar),
+        safeList<Doacao>('doações', doacaoService.listar),
+        safeList<Voluntario>('voluntários', voluntarioService.listar),
+        safeList<Triagem>('triagens', triagemService.listar),
+      ]);
+
+      setData({
+        beneficiarios,
+        dentistas,
+        doadores,
+        doacoes,
+        voluntarios,
+        triagens,
+      });
+
+      if (mostrarErro && erros.length > 0) {
+        setMsg({
+          text: `Alguns dados não foram carregados: ${erros.join(', ')}.`,
+          type: 'error',
+        });
+      }
+    } finally {
+      setLoading(false);
+    }
   }, []);
+
+  useEffect(() => {
+    carregarDados();
+  }, [carregarDados]);
 
   useEffect(() => {
     if (!msg) return;
@@ -191,7 +234,7 @@ export function Solucao() {
     totalDoacoes:       data.doacoes.length,
     totalVoluntarios:   data.voluntarios.length,
     totalTriagens:      data.triagens.length,
-    triagensEmAndamento: data.triagens.filter((t: any) => !t.dataFim).length,
+    triagensEmAndamento: data.triagens.filter((t: any) => !t.dtFim).length,
   }), [data]);
 
   const restaurarDados = async () => {
@@ -225,24 +268,43 @@ export function Solucao() {
 
   const save = async (values: any) => {
     const serviceMap: any = {
-      beneficiarios: beneficiarioService, dentistas: dentistaService, doadores: doadorService,
-      doacoes: doacaoService, voluntarios: voluntarioService, triagens: triagemService,
+      beneficiarios: beneficiarioService,
+      dentistas: dentistaService,
+      doadores: doadorService,
+      doacoes: doacaoService,
+      voluntarios: voluntarioService,
+      triagens: triagemService,
     };
+
     const service = serviceMap[tab];
     const payload = cleanForSave(values);
+
     try {
       if (editing && 'id' in editing && editing.id) {
-        const updated = await service.atualizar(editing.id, { ...editing, ...payload });
-        setData((p) => ({ ...p, [tab]: p[tab].map((x: any) => x.id === editing.id ? updated : x) }));
-        setMsg({ text: 'Registro atualizado com sucesso!', type: 'success' });
+        await service.atualizar(editing.id, { ...editing, ...payload });
+
+        setMsg({
+          text: 'Registro atualizado com sucesso!',
+          type: 'success',
+        });
       } else {
-        const created = await service.criar(payload);
-        setData((p) => ({ ...p, [tab]: [...p[tab], created] }));
-        setMsg({ text: 'Registro adicionado com sucesso!', type: 'success' });
+        await service.criar(payload);
+
+        setMsg({
+          text: 'Registro adicionado com sucesso!',
+          type: 'success',
+        });
       }
+
       setOpenModal(false);
-    } catch {
-      setMsg({ text: 'Ocorreu um erro ao salvar. Tente novamente.', type: 'error' });
+      await carregarDados(false);
+    } catch (error) {
+      console.error('Erro ao salvar registro:', error);
+
+      setMsg({
+        text: 'Ocorreu um erro ao salvar. Tente novamente.',
+        type: 'error',
+      });
     }
   };
 
