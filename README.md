@@ -1,88 +1,60 @@
-# 🚀 Projeto Challenge - Central do Bem
+<div align="center">
+  <img src="imagem/logocdb.png" alt="Logo Central do Bem" width="180"/>
 
-Bem-vindo ao repositório do **Central do Bem**!  
-Este projeto foi desenvolvido para a parte de Front-End do projeto Central do Bem.
+  # Central do Bem — Front-End
 
----
+  **Plataforma centralizada de gestão e comunicação para a Turma do Bem**
 
-## 🔗 Link do Projeto
-Acesse o projeto no GitHub:  
-[ Acessar Projeto](https://github.com/guilhermeeustaquio/Challenge)
-
-[Video no Youtube demonstrando o projeto](https://youtu.be/nRJ7Bidjgvg)
-
+  [![GitHub repo](https://img.shields.io/badge/GitHub-Repositório-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/guilhermeeustaquio/Challenge)
+  [![YouTube](https://img.shields.io/badge/YouTube-Demonstração-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/nRJ7Bidjgvg)
+  [![Vercel](https://img.shields.io/badge/Vercel-Deploy-000000?style=for-the-badge&logo=vercel&logoColor=white)](#deploys)
+</div>
 
 ---
 
-## 🚀 Como rodar o projeto
+## 📋 Sobre o Projeto
 
-Siga os passos abaixo para executar o projeto localmente:
+### ❓ Problema
 
-Link do tutorial de instalação do projeto: https://youtu.be/uJeUh0mtqgk
-
-### Clone o repositório
-```bash
-git clone https://github.com/guilhermeeustaquio/Challenge.git
-
-```
-
-### Acesse a pasta do projeto
-
-```bash
-
-cd Challenge
-
-```
-
-###  Instale as dependências
-
-```bash
-
-npm install
-
-```
-
-### Execute o projeto 
-```bash
-npm run dev
-
-```
-
-### Abra o projeto no navegador
-Aparecerá um link semelhante ao link a seguir
-
-Basta copiar e colar no navegador para visualizar o projeto
-```bash
-http://localhost:5173/
-
-```
-
-
-
----
-
-## 👥 Equipe
-
-| Nome | RM | GitHub | LinkedIn |
-|------|----|--------|----------|
-| **Guilherme Eustaquio** | 566784 | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/guilhermeeustaquio) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/guilhermeeustaquio) |
-| **Caio Couto** | 563452 | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/caioccouto) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/caio-couto-44b849326) |
-| **Matheus Tavares** | 566844 | [![GitHb](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/manovares) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/manovares/) |
-
-
----
-
-## 📝 Descrição
-Segue uma breve apresentação sobre o projeto:
-
-### ❓ Problema apresentado pela empresa Turma do Bem
-O problema principal foi a **dificuldade de centralização dos canais de comunicação**, o que causou perda de informações essenciais, dificultando o cadastro e atendimento dos pacientes.
+A **Turma do Bem** enfrentava dificuldades com a **dispersão dos canais de comunicação**, o que causava perda de informações essenciais e dificultava o cadastro e atendimento dos pacientes beneficiados pelo projeto.
 
 ### 💡 Nossa Solução
-Desenvolvemos uma **plataforma centralizada** que organiza os canais de comunicação e garante que todas as informações importantes dos pacientes fiquem registradas de forma segura e acessível, evitando perdas e retrabalho.
 
-### 🎯 Objetivo principal
-O objetivo do projeto é **facilitar a gestão de informações e comunicação entre equipe e pacientes**, melhorando a eficiência do atendimento e o fluxo de trabalho da empresa.
+Desenvolvemos uma **plataforma web centralizada** que organiza os canais de comunicação e garante que todas as informações importantes dos pacientes fiquem registradas de forma segura e acessível, eliminando retrabalho e perda de dados.
+
+### 🎯 Objetivo
+
+Facilitar a **gestão de informações e a comunicação** entre equipe e pacientes, melhorando a eficiência do atendimento e o fluxo de trabalho da organização.
+
+---
+
+## 🖼️ Imagens do Projeto
+
+<div align="center">
+  <img src="imagem/logo-turma-do-bem.png" alt="Logo Turma do Bem" width="220"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="imagem/logocdb.png" alt="Logo Central do Bem" width="180"/>
+</div>
+
+> As imagens e ícones do projeto estão armazenados na pasta `imagem/` e utilizados como ativos estáticos ao longo da aplicação.
+
+---
+
+## ⚡ Tecnologias Utilizadas
+
+| Tecnologia | Descrição |
+|---|---|
+| **React** | Biblioteca para construção de interfaces |
+| **Vite** | Bundler e servidor de desenvolvimento rápido |
+| **TypeScript** | Superset tipado do JavaScript |
+| **TailwindCSS** | Estilização via classes utilitárias (sem bibliotecas de UI externas) |
+| **React Router DOM** | Roteamento entre páginas (rotas estáticas e dinâmicas) |
+| **React Hook Form** | Gerenciamento e validação de formulários |
+| **Fetch API** | Comunicação com a API REST (nativa, sem Axios) |
+| **Java / Quarkus** | Backend previsto para integração via REST |
+| **Oracle** | Banco de dados relacional previsto |
+| **Git & GitHub** | Versionamento e hospedagem do código |
+| **Vercel** | Deploy e hospedagem do front-end |
 
 ---
 
@@ -90,36 +62,44 @@ O objetivo do projeto é **facilitar a gestão de informações e comunicação 
 
 ```
 Challenge/
-├── imagem/                     # Imagens estáticas do projeto
-│   ├── icon/                   # Ícones de navegação
-│   └── *.png / *.jpg           # Demais imagens
-├── public/                     # Arquivos públicos (favicon, ícones SVG)
+├── imagem/                        # Imagens e ícones estáticos do projeto
+│   ├── icon/                      # Ícones de navegação
+│   ├── logocdb.png                # Logo Central do Bem
+│   ├── logo-turma-do-bem.png      # Logo Turma do Bem
+│   └── *.png / *.jpg              # Demais imagens
+├── public/                        # Arquivos públicos (favicon, ícones SVG)
 ├── src/
 │   ├── assets/
-│   │   └── data.ts             # Dados estáticos da aplicação
-│   ├── components/             # Componentes reutilizáveis
+│   │   └── data.ts                # Dados estáticos da aplicação
+│   ├── components/                # Componentes reutilizáveis
 │   │   ├── Accordion/
 │   │   ├── Button/
 │   │   ├── Card/
+│   │   ├── CrudModal/
+│   │   ├── DashboardCard/
 │   │   ├── Footer/
 │   │   ├── Header/
 │   │   ├── Layout/
 │   │   ├── MetricCard/
 │   │   └── SectionHeader/
-│   ├── pages/                  # Páginas da aplicação
+│   ├── mocks/
+│   │   └── mockData.ts            # Dados mockados para uso sem API
+│   ├── pages/                     # Páginas da aplicação
 │   │   ├── Contato/
 │   │   ├── FAQ/
 │   │   ├── Home/
 │   │   ├── Integrantes/
 │   │   ├── Sobre/
-│   │   └── Solucao/
+│   │   └── Solucao/               # Área de gestão com CRUD completo
 │   ├── routes/
-│   │   └── AppRoutes.tsx       # Definição das rotas
+│   │   └── AppRoutes.tsx          # Definição das rotas
+│   ├── services/                  # Camada de serviços (integração com API)
 │   ├── types/
-│   │   └── index.ts            # Tipos TypeScript globais
-│   ├── App.tsx                 # Componente raiz
-│   ├── main.tsx                # Ponto de entrada
-│   └── index.css               # Estilos globais
+│   │   └── index.ts               # Tipos TypeScript globais
+│   ├── App.tsx                    # Componente raiz
+│   ├── main.tsx                   # Ponto de entrada
+│   └── index.css                  # Estilos globais
+├── .env.example                   # Variáveis de ambiente de exemplo
 ├── index.html
 ├── vite.config.ts
 ├── tailwind.config.js
@@ -128,73 +108,142 @@ Challenge/
 
 ---
 
-## ⚡ Tecnologias Utilizadas na parte de Front-End
-- Vite
-- React
-- Git e GitHub
-- Typescript
+## 🚀 Como Usar
+
+### Links Importantes
+
+| Recurso | Link |
+|---|---|
+| 📁 Repositório GitHub | [github.com/guilhermeeustaquio/Challenge](https://github.com/guilhermeeustaquio/Challenge) |
+| 🎬 Vídeo de Demonstração | [youtube.com/watch?v=nRJ7Bidjgvg](https://youtu.be/nRJ7Bidjgvg) |
+| 📹 Tutorial de Instalação | [youtube.com/watch?v=uJeUh0mtqgk](https://youtu.be/uJeUh0mtqgk) |
+| 🌐 Deploy Vercel | _a preencher_ |
+
+### Rodando Localmente
+
+**1. Clone o repositório**
+```bash
+git clone https://github.com/guilhermeeustaquio/Challenge.git
+```
+
+**2. Acesse a pasta do projeto**
+```bash
+cd Challenge
+```
+
+**3. Instale as dependências**
+```bash
+npm install
+```
+
+**4. Configure as variáveis de ambiente** *(opcional — sem isso, usa dados mockados)*
+```bash
+cp .env.example .env
+# Edite o .env e defina VITE_API_URL com a URL do seu backend
+# Exemplo: VITE_API_URL=http://localhost:8080
+```
+
+**5. Execute o projeto**
+```bash
+npm run dev
+```
+
+**6. Acesse no navegador**
+```
+http://localhost:5173/
+```
+
+### Outros Comandos
+
+```bash
+npm run build   # Gera o build de produção
+npm run preview # Visualiza o build localmente
+```
+
+---
+
+## 👥 Autores
+
+<table>
+  <tr>
+    <th>Foto</th>
+    <th>Nome</th>
+    <th>RM</th>
+    <th>Turma</th>
+    <th>GitHub</th>
+    <th>LinkedIn</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="imagem/euperfil.jpg" alt="Guilherme Eustaquio" width="80" style="border-radius:50%"/>
+    </td>
+    <td><strong>Guilherme Eustaquio</strong></td>
+    <td>566784</td>
+    <td>1TDS Agosto</td>
+    <td>
+      <a href="https://github.com/guilhermeeustaquio">
+        <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+      </a>
+    </td>
+    <td>
+      <a href="https://www.linkedin.com/in/guilhermeeustaquio">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="imagem/caioperfil.jpeg" alt="Caio Couto" width="80" style="border-radius:50%"/>
+    </td>
+    <td><strong>Caio Couto</strong></td>
+    <td>563452</td>
+    <td>1TDS Agosto</td>
+    <td>
+      <a href="https://github.com/caioccouto">
+        <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+      </a>
+    </td>
+    <td>
+      <a href="https://www.linkedin.com/in/caio-couto-44b849326">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/manovares.png" alt="Matheus Tavares" width="80" style="border-radius:50%"/>
+    </td>
+    <td><strong>Matheus Tavares</strong></td>
+    <td>566844</td>
+    <td>1TDS Agosto</td>
+    <td>
+      <a href="https://github.com/manovares">
+        <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+      </a>
+    </td>
+    <td>
+      <a href="https://www.linkedin.com/in/manovares/">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+      </a>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 📬 Contato
+
+Entre em contato com a equipe pelos perfis do LinkedIn acima ou abra uma [issue no repositório](https://github.com/guilhermeeustaquio/Challenge/issues).
 
 ---
 
 ## 📌 Observações
-- Este repositório é destinado à avaliação do projeto.  
 
+- Este repositório é destinado à avaliação acadêmica do projeto (FIAP — Sprint 3 e Sprint 4).
+- A área de gestão (`/solucao`) funciona com **dados mockados** quando `VITE_API_URL` não está configurado.
+- Quando `VITE_API_URL` estiver definido, o front-end se conecta ao backend Java/Quarkus via REST.
+- Não há autenticação nesta versão.
 
-
-## ⚡ Tecnologias Utilizadas
-- React
-- Vite
-- TypeScript
-- TailwindCSS
-- React Router DOM
-- React Hook Form
-- Fetch API
-- Java/Quarkus (backend previsto)
-- Oracle (banco previsto)
-
-## Preparação para Sprint 4
-O front-end agora está preparado para consumir a API Java/Quarkus via REST sem depender dela neste momento.
-
-### Configuração da API
-1. Copie `.env.example` para `.env`.
-2. Defina `VITE_API_URL` com a URL do backend (ex: `http://localhost:8080`).
-3. Se `VITE_API_URL` não estiver definido, o projeto usa automaticamente dados mockados de `src/mocks/mockData.ts`.
-
-### Módulos funcionais já prontos
-- Beneficiários
-- Dentistas
-- Doadores
-- Doações
-- Voluntários
-- Triagens
-- Dashboard de resumo em `/solucao`
-
-### Endpoints esperados
-- `/beneficiarios` (GET, GET por id, POST, PUT, DELETE)
-- `/dentistas` (GET, GET por id, POST, PUT, DELETE)
-- `/doadores` (GET, GET por id, POST, PUT, DELETE)
-- `/doacoes` (GET, GET por id, POST, PUT, DELETE)
-- `/voluntarios` (GET, GET por id, POST, PUT, DELETE)
-- `/triagens` (GET, GET por id, POST, PUT, DELETE)
-- `/dashboard/resumo` (GET)
-
-### Como rodar localmente
-```bash
-npm install
-npm run dev
-npm run build
-```
-
-### Deploys
-- URL da Vercel: _preencher_
-- URL da API publicada: _preencher_
-
-## Sprint 4 - Área de Gestão da Solução
-- A página `/solucao` funciona como área de gestão principal.
-- Há abas para Beneficiários, Dentistas, Doadores, Doações, Voluntários e Triagens.
-- Cada aba permite listar, adicionar, atualizar e deletar registros.
-- Sem `VITE_API_URL`, o sistema usa mocks internos.
-- Com `VITE_API_URL`, o front fica preparado para consumir a API Java/Quarkus.
-- Não há login nesta versão.
-- Não há filtro por usuário.
-- Os dados representam tabelas específicas do backend Java.
+<div align="center">
+  <sub>Desenvolvido com ❤️ pela equipe Central do Bem — FIAP 1TDS Agosto</sub>
+</div>
