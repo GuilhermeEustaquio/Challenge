@@ -7,7 +7,7 @@
 
   [![GitHub repo](https://img.shields.io/badge/Repositório-40036B?style=for-the-badge&logo=github&logoColor=white)](https://github.com/guilhermeeustaquio/Challenge)
   [![YouTube](https://img.shields.io/badge/Demonstração_Sprint3-7D0202?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/nRJ7Bidjgvg)
-  [![YouTube](https://img.shields.io/badge/Demonstração_Sprint4-C70808?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/nRJ7Bidjgvg)
+  [![YouTube](https://img.shields.io/badge/Demonstração_Sprint4-C70808?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/CLsWHwLc9cI)
   [![Vercel](https://img.shields.io/badge/Deploy-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://challenge-eosin-theta.vercel.app/)
 </div>
 
@@ -116,9 +116,9 @@ Challenge/
 | Recurso | Link |
 |---|---|
 | 📁 Repositório GitHub | [github.com/guilhermeeustaquio/Challenge](https://github.com/guilhermeeustaquio/Challenge) |
-| 🎬 Vídeo de Demonstração | [youtube.com/watch?v=nRJ7Bidjgvg](https://youtu.be/nRJ7Bidjgvg) |
+| 🎬 Vídeo de Demonstração | [https://www.youtube.com/watch?v=CLsWHwLc9cI](https://youtu.be/CLsWHwLc9cI) |
 | 📹 Tutorial de Instalação | [youtube.com/watch?v=uJeUh0mtqgk](https://youtu.be/uJeUh0mtqgk) |
-| 🌐 Deploy Vercel | _a preencher_ |
+| 🌐 Deploy Vercel |https://challenge-eosin-theta.vercel.app/solucao|
 
 ### Rodando Localmente
 
